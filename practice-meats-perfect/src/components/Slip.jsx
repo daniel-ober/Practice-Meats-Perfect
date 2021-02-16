@@ -6,7 +6,7 @@ function Slip(props) {
         <div>
             <h3>{name}</h3>
             <h4>{category}</h4>
-            <img src={imageURL}>
+            <img src={imageURL}/>
             <h5>{appearance}</h5>
             <h5>{taste}</h5>
             <h5>{tenderness}</h5>
@@ -15,4 +15,4 @@ function Slip(props) {
     )
 }
 
-export default Slip;
+export default Slip
