@@ -105,10 +105,10 @@ Example data from Airtable:
 
 ## Project Schedule
 
-| Day      | Deliverable                                            |    Status   |
-| -------- | ------------------------------------------------------ | ----------- |
-| Feb 12-15 | Prompt / Wireframes / Priority Matrix / Timeframes     | In Progress |
-| Feb 16    | Proposal Approval / Link Airtable API / Pseudocoding   | Not Started |
+| Day      | Deliverable                                             |    Status   |
+| -------- | ------------------------------------------------------- | ----------- |
+| Feb 12-15 | Prompt / Wireframes / Priority Matrix / Timeframes     | Completed   |
+| Feb 16    | Proposal Approval / Link Airtable API / Pseudocoding   | In Progress |
 | Feb 17    | Setup Services / Setup Components                      | Not Started |
 | Feb 18    | Functionable click model / Media Queries               | Not Started |
 | Feb 19    | Deployed MVP / Testing / De-bugging                    | Not Started |
