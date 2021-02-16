@@ -1,5 +1,4 @@
-import { Component } from 'react'
-import { BrowserRouter as Router } from 'react-router-dom'
+import Nav from './components/Nav'
 import { Route } from 'react-router-dom'
 import './App.css';
 
@@ -7,7 +6,7 @@ function App() {
   console.log(process.env)
   return (
     <div className="App">
-      Practice Meats Perfect
+      <Nav />
       <Route exact path="/">
         <h3>HOME goes here</h3>
       </Route>
