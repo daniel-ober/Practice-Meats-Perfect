@@ -3,6 +3,7 @@ import axios from 'axios'
 import { Route } from 'react-router-dom'
 import { baseURL, config } from './services'
 import Nav from './components/Nav'
+import Slip from './components/Slip'
 import './App.css';
 
 function App() {
@@ -22,7 +23,11 @@ function App() {
     <div className="App">
       <Nav />
       <Route exact path="/">
-        <h3>HOME goes here</h3>
+        <div className='slips-container'>
+          {slips.map((slip) => (
+            <Slip slip={slip} />
+          ))}
+        </div>
       </Route>
       <Route path='/new'>
         <h3>POST form goes here</h3>
