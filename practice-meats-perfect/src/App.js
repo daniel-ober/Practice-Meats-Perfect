@@ -5,6 +5,7 @@ import Nav from './components/Nav'
 import './App.css';
 
 function App() {
+  
 
   useEffect(() => {
     const getSlips = async () => {
@@ -15,12 +16,12 @@ function App() {
         },
       }
       const resp = await axios.get(url, config);
-      console.log(resp.data)
+      console.log(resp.data.records)
     }
     getSlips()
   }, [])
 
-  console.log(process.env)
+  // console.log(process.env)
   return (
     <div className="App">
       <Nav />
