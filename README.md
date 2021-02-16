@@ -39,7 +39,7 @@ Example data from Airtable:
             "id": "recc8Xabg5xpf1CFp",
             "fields": {
                 "notes": "a hidden gem on Beale St in Memphis, TN.  this rack of ribs had a balanced blend of tomato and vinegar flavor, but overall had a bit too much sauce co...",
-                "image_url": "https://i.imgur.com/cC3tVj7.jpg",
+                "imageURL": "https://i.imgur.com/cC3tVj7.jpg",
                 "taste": "6",
                 "tenderness": "6",
                 "category": "Ribs",
@@ -53,7 +53,7 @@ Example data from Airtable:
             "id": "recgMTxxRYU9fwgML",
             "fields": {
                 "notes": "this team did a great job of presenting a sliced pork with subtle notes of honey and a nice smoked hickory kick. appearance was a bit inconsistent in ...",
-                "image_url": "https://i.imgur.com/bU2QMXW.jpg",
+                "imageURL": "https://i.imgur.com/bU2QMXW.jpg",
                 "taste": "8",
                 "tenderness": "7",
                 "category": "Pork",
@@ -67,7 +67,7 @@ Example data from Airtable:
             "id": "recZwNSnRZpKxDwOX",
             "fields": {
                 "notes": "a nice apple cider vinegar tase with a consistent rub texture. overall great rib!",
-                "image_url": "https://i.imgur.com/5Ws4jAA.jpg",
+                "imageURL": "https://i.imgur.com/5Ws4jAA.jpg",
                 "taste": "8",
                 "tenderness": "8",
                 "category": "Ribs",
