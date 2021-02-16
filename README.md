@@ -28,8 +28,6 @@ Post-MVP Preview
 
 ## API and Data Sample
 
-https://api.airtable.com/v0/appzbICQ9vK9SciR1
-
 Example data from Airtable:
 
 ```
