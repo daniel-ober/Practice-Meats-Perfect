@@ -1,22 +1,18 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Route } from 'react-router-dom'
+import { baseURL, config } from './services'
 import Nav from './components/Nav'
 import './App.css';
 
 function App() {
-  
+  const [slips, setSlips] = useState([])
 
   useEffect(() => {
     const getSlips = async () => {
-      const url = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/slips`;
-      const config = { 
-        headers: {
-        Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
-        },
-      }
-      const resp = await axios.get(url, config);
-      console.log(resp.data.records)
+      const resp = await axios.get(baseURL, config);
+      // console.log(resp.data.records)
+      setSlips(resp.data.records)
     }
     getSlips()
   }, [])
