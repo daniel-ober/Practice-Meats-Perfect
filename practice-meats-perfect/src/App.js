@@ -3,6 +3,7 @@ import axios from 'axios'
 import { Route } from 'react-router-dom'
 import { baseURL, config } from './services'
 import Nav from './components/Nav'
+import Form from './components/Form'
 import Slip from './components/Slip'
 import './App.css';
 
@@ -30,7 +31,7 @@ function App() {
         </div>
       </Route>
       <Route path='/new'>
-        <h3>POST form goes here</h3>
+          <Form />
       </Route>
       <Route path='/about'>
         <h3>ABOUT goes here</h3>

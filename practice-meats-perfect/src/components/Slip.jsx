@@ -1,6 +1,6 @@
 function Slip(props) {
     
-    const { name, category, imageURL, appearance, taste, tenderness, notes } = props.slip.fields;
+    const { name, category, imageURL, appearance, taste, tenderness, notes, } = props.slip.fields;
     
     return (
         <div>
