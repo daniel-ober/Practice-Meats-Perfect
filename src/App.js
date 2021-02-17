@@ -29,6 +29,9 @@ function App() {
           {slips.map((slip) => (
             <Slip slip={slip} key={slip.id}/>
           ))}
+          <div className='slip-details'>
+            
+          </div>
         </div>
       </Route>
       <Route path='/new'>

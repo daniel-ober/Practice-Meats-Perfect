@@ -17,7 +17,7 @@ nav, a {
 input {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
   width: 30vh;
   padding: 7px;
   margin: 10px;
@@ -26,7 +26,7 @@ input {
 }
 
 img {
-  width: 30vh;
+  width: 50vh;
   border-radius: 2%;
 }
 
