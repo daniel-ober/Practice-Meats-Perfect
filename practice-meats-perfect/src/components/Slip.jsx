@@ -3,7 +3,7 @@ function Slip(props) {
     const { name, category, imageURL, appearance, taste, tenderness, notes, } = props.slip.fields;
     
     return (
-        <div>
+        <div class='slip'>
             <h3>{name}</h3>
             <h4>{category}</h4>
             <img src={imageURL}/>

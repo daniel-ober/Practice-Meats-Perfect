@@ -17,17 +17,19 @@ const handleSubmit = async (e) => {
     const fields = { name, category, imageURL, appearance, taste, tenderness, notes, };
     // console.log(fields)
     await axios.post(baseURL, { fields }, config);
-}
+    props.setToggleFetch((curr) => !curr)
+};
 
 return (
     <form onSubmit={handleSubmit}>
-        <input htmlFor='name' type='text' value={name} placeholder='Team/Restaurant Name' onChange={(e) => setName(e.target.value)} />
-        <input htmlFor='category' type='text' value={category} placeholder='Meat Category' onChange={(e) => setCategory(e.target.value)} />
-        <input htmlFor='imageURL' type='text' value={imageURL} placeholder='Image URL' onChange={(e) => setImageURL(e.target.value)} />
-        <input htmlFor='appearance' type='text' value={appearance} placeholder='Appearance (score 1-9)' onChange={(e) => setAppearance(e.target.value)} />
-        <input htmlFor='taste' type='text' value={taste} placeholder='Taste (score 1-9)' onChange={(e) => setTaste(e.target.value)} />
-        <input htmlFor='tenderness' type='text' value={tenderness} placeholder='Temderness (score 1-9)' onChange={(e) => setTenderness(e.target.value)} />
-        <input htmlFor='notes' type='text' value={notes} placeholder='Notes' onChange={(e) => setNotes(e.target.value)} />
+        <h1>New Judging Slip</h1>
+        <input id='name' type='text' value={name} placeholder='Team/Restaurant Name' onChange={(e) => setName(e.target.value)} />
+        <input id='category' type='text' value={category} placeholder='Meat Category' onChange={(e) => setCategory(e.target.value)} />
+        <input id='imageURL' type='text' value={imageURL} placeholder='Image URL' onChange={(e) => setImageURL(e.target.value)} />
+        <input id='appearance' type='text' value={appearance} placeholder='Appearance (score 1-9)' onChange={(e) => setAppearance(e.target.value)} />
+        <input id='taste' type='text' value={taste} placeholder='Taste (score 1-9)' onChange={(e) => setTaste(e.target.value)} />
+        <input id='tenderness' type='text' value={tenderness} placeholder='Temderness (score 1-9)' onChange={(e) => setTenderness(e.target.value)} />
+        <input id='notes' type='text' value={notes} placeholder='Notes' onChange={(e) => setNotes(e.target.value)} />
         <button type='submit'>Submit</button>
     </form>
 )

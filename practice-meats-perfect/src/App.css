@@ -3,6 +3,33 @@
   text-align: center;
 }
 
+nav, a {
+  margin: 2vh;
+}
+
+.slip {
+  background-color: antiquewhite;
+  margin-left: 25vh;
+  margin-right: 25vh;
+  margin-top: 3vh;
+}
+
+input {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 30vh;
+  padding: 7px;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  width: 30vh;
+  border-radius: 2%;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

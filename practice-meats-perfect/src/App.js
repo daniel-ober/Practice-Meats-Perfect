@@ -9,6 +9,7 @@ import './App.css';
 
 function App() {
   const [slips, setSlips] = useState([])
+  const [toggleFetch, setToggleFetch] = useState(false)
 
   useEffect(() => {
     const getSlips = async () => {
@@ -17,7 +18,7 @@ function App() {
       setSlips(resp.data.records)
     }
     getSlips()
-  }, [])
+  }, [toggleFetch]);
 
   // console.log(process.env)
   return (
@@ -26,12 +27,12 @@ function App() {
       <Route exact path="/">
         <div className='slips-container'>
           {slips.map((slip) => (
-            <Slip slip={slip} />
+            <Slip slip={slip} key={slip.id}/>
           ))}
         </div>
       </Route>
       <Route path='/new'>
-          <Form />
+          <Form setToggleFetch={setToggleFetch} />
       </Route>
       <Route path='/about'>
         <h3>ABOUT goes here</h3>
