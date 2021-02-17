@@ -7,11 +7,24 @@ nav, a {
   margin: 2vh;
 }
 
-.slip {
+.slip-container {
+  display: flex;
   background-color: antiquewhite;
   margin-left: 25vh;
   margin-right: 25vh;
-  margin-top: 3vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.slip-image {
+  height: 200px;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+}
+
+.slip-details {
+  text-align: left;
+  padding-left: 4vh;
 }
 
 input {
@@ -23,11 +36,6 @@ input {
   margin: 10px;
   margin-left: auto;
   margin-right: auto;
-}
-
-img {
-  width: 50vh;
-  border-radius: 2%;
 }
 
 .App-logo {

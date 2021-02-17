@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import { Route } from 'react-router-dom'
+import { Route, Link } from 'react-router-dom'
 import { baseURL, config } from './services'
 import Nav from './components/Nav'
 import Form from './components/Form'
 import Slip from './components/Slip'
+import About from './components/About'
+import Footer from './components/Footer'
 import './App.css';
 
 function App() {
@@ -38,7 +40,10 @@ function App() {
           <Form setToggleFetch={setToggleFetch} />
       </Route>
       <Route path='/about'>
-        <h3>ABOUT goes here</h3>
+        <About />
+        </Route>
+      <Route path='/footer'>
+        <Footer />
       </Route>
     </div>
   );

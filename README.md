@@ -3,7 +3,7 @@
 
 ## Project Description
 
-Practice Meats Perfect is an Airtable and React build that gives BBQ enthusiasts the ability to sharetheir food scores/notes via a judging 'slip', similar to ones used in competitive BBQ. From the Home screen, users can view recently judged BBQ or choose to navigate to the "New Slip" form page in the Navigation bar to submit their own scoring slip and image link.
+Practice Meats Perfect is an Airtable and React build that gives BBQ enthusiasts the ability to share their food scores/notes via a judging 'slip', similar to ones used in competitive BBQ. From the Home screen, users can view recently judged BBQ or choose to navigate to the "New Slip" form page in the Navigation bar to submit their own scoring slip and image link.
 
 
 ## Wireframes
