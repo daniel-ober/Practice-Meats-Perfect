@@ -118,23 +118,23 @@ Example data from Airtable:
 
 | Component                   | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Setup React App             |    H     |      2hrs      |     0hrs      |    0hrs     |
-| Airtable / Data Setup       |    H     |      2hrs      |     0hrs      |    0hrs     |
-| Component: Nav              |    H     |      3hrs      |     0hrs      |    0hrs     |
+| Setup React App             |    H     |      2hrs      |     1hrs      |    0hrs     |
+| Airtable / Data Setup       |    H     |      2hrs      |     1hrs      |    0hrs     |
+| Component: Nav              |    H     |      3hrs      |     0.5hrs    |    0hrs     |
 | Component: Home             |    H     |      3hrs      |     0hrs      |    0hrs     |
-| Component: Form             |    H     |      3hrs      |     0hrs      |    0hrs     |
-| Component: Details          |    H     |      3hrs      |     0hrs      |    0hrs     |
+| Component: Form             |    H     |      3hrs      |     1hrs      |    0hrs     |
+| Component: Slips            |    H     |      3hrs      |     1hrs      |    0hrs     |
 | Component: About            |    H     |      1hrs      |     0hrs      |    0hrs     |
 | Component: Footer           |    H     |      1hrs      |     0hrs      |    0hrs     |
-| App.js Routes               |    H     |      3hrs      |     0hrs      |    0hrs     |
-| Render Data                 |    H     |      3hrs      |     0hrs      |    0hrs     |
-| Functional Buttons          |    H     |      3hrs      |     0hrs      |    0hrs     |
+| App.js Routes               |    H     |      3hrs      |     1hrs      |    0hrs     |
+| Render Data                 |    H     |      3hrs      |     1hrs      |    0hrs     |
+| Functional Buttons          |    H     |      3hrs      |     0.5hrs    |    0hrs     |
 | Media Query                 |    H     |      3hrs      |     0hrs      |    0hrs     |
-| CSS Styling: Homepage       |    H     |      3hrs      |     0hrs      |    0hrs     |
-| CSS Styling: New Slip Form  |    H     |      3hrs      |     0hrs      |    0hrs     |
+| CSS Styling: Homepage       |    H     |      3hrs      |     0.25hrs   |    0hrs     |
+| CSS Styling: New Slip Form  |    H     |      3hrs      |     0.25hrs   |    0hrs     |
 | CSS Styling: About Page     |    H     |      1hrs      |     0hrs      |    0hrs     |
 | CSS Styling: Footer Page    |    H     |      1hrs      |     0hrs      |    0hrs     |
-| Total                       |    H     |      38hrs     |     0hrs      |    0hrs     |
+| Total                       |    H     |      38hrs     |     7.5hrs    |    0hrs     |
 
 
 ## SWOT Analysis
