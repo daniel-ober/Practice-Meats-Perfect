@@ -11,7 +11,9 @@ function Slip(props) {
 
   return (
     <div className='slip-container'>
-      <img src={imageURL} className='slip-image' alt={category} />
+      <div>
+        <img src={imageURL} className='slip-image' alt={category} />
+      </div>
       <div className="slip-details">
         <h3>Team Number: {team}</h3>
         <h4>Category: {category}</h4>

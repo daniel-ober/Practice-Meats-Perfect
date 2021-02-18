@@ -1,6 +1,6 @@
 function About(props) {
   return (
-    <div className="about-container">
+    <div className="about">
       <h3>
         Practice Meats Perfect gives BBQ enthusiasts the ability to share their
         food scores/notes via a judging 'slip', similar to ones used in
