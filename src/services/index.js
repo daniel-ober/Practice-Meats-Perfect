@@ -1,6 +1,6 @@
-export const baseURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/slips`
-export const config = { 
-    headers: {
+export const baseURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/slips`;
+export const config = {
+  headers: {
     Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
-    }
-}
+  },
+};
