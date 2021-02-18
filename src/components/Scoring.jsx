@@ -41,19 +41,17 @@ function Scoring(props) {
       />
       <select
           id="category"
-          type="text"
           value={category}
           onChange={(e) => setCategory(e.target.value)}
         >
         <option value="meat-category">Meat Category</option>
-        <option value="chicken">Chicken</option>
-        <option value="ribs">Ribs</option>
-        <option value="pork">Pork</option>
-        <option value="brisket">Brisket</option>
+        <option value="Chicken">Chicken</option>
+        <option value="Ribs">Ribs</option>
+        <option value="Pork">Pork</option>
+        <option value="Brisket">Brisket</option>
       </select>
       <select
         id="appearance"
-        type="text"
         value={appearance}
         onChange={(e) => setAppearance(e.target.value)}
       >
@@ -70,7 +68,6 @@ function Scoring(props) {
       </select>
       <select
         id="taste"
-        type="text"
         value={taste}
         onChange={(e) => setTaste(e.target.value)}
       >
@@ -87,7 +84,6 @@ function Scoring(props) {
       </select>
       <select
         id="tenderness"
-        type="text"
         value={tenderness}
         onChange={(e) => setTenderness(e.target.value)}
       >
