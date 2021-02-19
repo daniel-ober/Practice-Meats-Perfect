@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
 import { Route } from "react-router-dom";
+import { useEffect, useState } from "react";
 import { baseURL, config } from "./services";
+import axios from "axios";
 import Nav from "./components/Nav";
 import NewSlip from "./components/NewSlip";
 import About from "./components/About";

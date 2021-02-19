@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { baseURL, config } from "../services";
+import { useHistory } from 'react-router-dom';
 
 function NewSlip(props) {
   const [team, setTeam] = useState("");
@@ -10,6 +11,7 @@ function NewSlip(props) {
   const [tenderness, setTenderness] = useState("");
   const [comments, setComments] = useState("");
   const [imageURL, setImageURL] = useState("")
+  const histroy = useHistory();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -25,6 +27,7 @@ function NewSlip(props) {
     // console.log(fields)
     await axios.post(baseURL, { fields }, config);
     props.setToggleFetch((curr) => !curr);
+    histroy.push("/")
   };
 
   return (

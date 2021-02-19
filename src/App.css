@@ -36,27 +36,34 @@ a {
 }
 
 .slip-container {
-  display: inline-flexbox;
-  flex-direction:column;
-  background-color: rgba(187, 119, 16, 0.132);
-  margin-left: 10%;
-  margin-right: 10%;
-  border-radius: 10px;
-  border-color: mediumblue;
+  /* width: 20vw;
+  box-sizing:content-box;
+  border-radius: 50px;
+  background-color: rgb(238, 240, 249);
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "H H H H"
+    "I I I I"
+    "I I I I"
+    "I I I I"
+    "F F F F";
+  margin: 0px 0px 0px 0px; */
 }
 
 .slip-image {
-  height: 400px;
-  display: block;
+  /* height: 400px;
+  display:block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
+  /* object-fit: cover; */
 }
 
-.slip-details {
+/* .slip-details {
   display: flex;
   flex-direction: column;
   text-align: center;
-}
+} */
 
 .rules {
   margin-right: 10vh;
@@ -102,10 +109,10 @@ h1 {
   background-color: rgb(29, 9, 215);
 }
 
-.about {
+/* .about {
   padding-right: 10vh;
   padding-left: 10vh;
-}
+} */
 
 footer {
   position: fixed;
@@ -158,24 +165,6 @@ footer {
     display: grid;
   }
 
-  /* .event-container {
-    display:inline-table;
-    background-color: rgba(87, 0, 0, 0.205);
-    margin-left: 2vh;
-    margin-right: 2vh;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-  }
-  
-  .event-image {
-    height: 100px;
-  }
-  
-  .event-details {
-    text-align: left;
-
-  } */
-  
   .rules {
     margin-right: 10vh;
     margin-left: 10vh;
@@ -254,12 +243,6 @@ footer {
     height: 4vh;
     color: white;
     background-color: rgb(29, 9, 215);
-  }
-
-  .about {
-    padding-right: 5vh;
-    padding-left: 5vh;
-    font-size: medium;
   }
 
   .footer {
@@ -388,12 +371,6 @@ footer {
     background-color: rgb(29, 9, 215);
   }
 
-  .about {
-    padding-right: 4vh;
-    padding-left: 4vh;
-    font-size: large;
-  }
-
   .footer {
     position: fixed;
     left: 0;
@@ -419,3 +396,23 @@ footer {
     font-size: small;
   }
 }
+
+
+  /* .event-container {
+    display:inline-table;
+    background-color: rgba(87, 0, 0, 0.205);
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+  
+  .event-image {
+    height: 100px;
+  }
+  
+  .event-details {
+    text-align: left;
+
+  } */
+  

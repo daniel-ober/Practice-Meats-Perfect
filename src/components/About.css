@@ -1,0 +1,33 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Hanuman:wght@700&display=swap");
+
+
+@media only screen and (max-width: 1366px) {
+
+}
+
+@media only screen and (max-width: 812px) {
+
+} */
+
+
+.about {
+    padding-right: 10vh;
+    padding-left: 10vh;
+  }
+  
+  
+  @media only screen and (max-width: 1366px) {
+  .about {
+    padding-right: 15vh;
+    padding-left: 15vh;
+    font-size: large;
+  }
+  }
+  
+  @media only screen and (max-width: 812px) {
+  .about {
+    padding-right: 4vh;
+    padding-left: 4vh;
+    font-size: large;
+  }
+  }

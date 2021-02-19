@@ -1,0 +1,44 @@
+.slip-container {
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px -5px;
+  transition: 0.5s;
+  animation: ease-in;
+}
+
+.slip-container:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 15px 0px;
+}
+
+.slip-image {
+  overflow: hidden;
+  height: 200px;
+}
+
+.slip-content {
+  margin: 25px;
+}
+
+.slip-title {
+  margin-bottom: 15px;
+}
+
+.slip-button {
+  display: flex;
+  justify-content: center;
+}
+
+.slip-button button {
+  padding: 5px;
+  background-color: rgba(21, 55, 141, 0.166);
+  transition: 0.1s;
+}
+
+.slip-button:hover {
+
+}
+
+h5 {
+  margin: 3px;
+}
