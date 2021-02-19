@@ -7,8 +7,9 @@ function Nav() {
       <img src='https://i.imgur.com/VqPYDtJ.png' id='logo-header' alt='BBQ wars' />
       </div>
       <Link to="/">Home</Link>
-      <Link to='/rules'>Rules</Link>
+      <Link to="/new-event">New Event</Link>
       <Link to="/new-slip">New Scoring Slip</Link>
+      <Link to='/rules'>Rules</Link>
       <Link to="/about">About</Link>
     </nav>
   );

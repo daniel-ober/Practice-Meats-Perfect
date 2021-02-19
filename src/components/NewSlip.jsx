@@ -1,13 +1,10 @@
 import axios from "axios";
 import { useState } from "react";
 import { baseURL, config } from "../services";
-// import Scoring from '../components/Scoring'
-// imports will include: baseURL and config from services folder, useState from React, and axios for my post
 
-function SlipPost(props) {
+function NewSlip(props) {
   const [team, setTeam] = useState("");
   const [category, setCategory] = useState("");
-  const [imageURL, setImageURL] = useState("");
   const [appearance, setAppearance] = useState("");
   const [taste, setTaste] = useState("");
   const [tenderness, setTenderness] = useState("");
@@ -18,7 +15,6 @@ function SlipPost(props) {
     const fields = {
       team,
       category,
-      imageURL,
       appearance,
       taste,
       tenderness,
@@ -26,11 +22,11 @@ function SlipPost(props) {
     };
     // console.log(fields)
     await axios.post(baseURL, { fields }, config);
-    props.setToggleFetch((curr) => !curr);
+    // props.setToggleFetch((curr) => !curr);
   };
 
   return (
-    <form className='score-slip' onSubmit={handleSubmit}>
+    <form className="score-slip" onSubmit={handleSubmit}>
       <h1>New Scoring Slip</h1>
       <input
         id="contestant"
@@ -39,7 +35,7 @@ function SlipPost(props) {
         placeholder="Team Number"
         onChange={(e) => setTeam(e.target.value)}
       />
-      <br/>
+      <br />
       <select
         id="category"
         value={category}
@@ -51,7 +47,7 @@ function SlipPost(props) {
         <option value="Pork">Pork</option>
         <option value="Brisket">Brisket</option>
       </select>
-      <br/>
+      <br />
       <select
         id="appearance"
         value={appearance}
@@ -68,7 +64,7 @@ function SlipPost(props) {
         <option value="2">Appearance: 2 - Inedible</option>
         <option value="1">Appearance: 1 - Disqualified</option>
       </select>
-      <br/>
+      <br />
       <select
         id="taste"
         value={taste}
@@ -85,7 +81,7 @@ function SlipPost(props) {
         <option value="2">Taste: 2 - Inedible</option>
         <option value="1">Taste: 1 - Disqualified</option>
       </select>
-      <br/>
+      <br />
       <select
         id="tenderness"
         value={tenderness}
@@ -102,23 +98,23 @@ function SlipPost(props) {
         <option value="2">Tenderness: 2 - Inedible</option>
         <option value="1">Tenderness: 1 - Disqualified</option>
       </select>
-      <br/>
-      <input
+      <br />
+      {/* <input
         id="imageURL"
         type="text"
         value={imageURL}
         placeholder="Image URL"
         onChange={(e) => setImageURL(e.target.value)}
       />
-      <br/>
-      <textarea
+      <br /> */}
+      <input
         id="comments"
         type="text"
         value={comments}
         placeholder="Comments"
         onChange={(e) => setComments(e.target.value)}
       />
-      <br/>
+      <br />
       <button className="submit-slip" type="submit">
         Submit
       </button>
@@ -126,7 +122,7 @@ function SlipPost(props) {
   );
 }
 
-export default SlipPost;
+export default NewSlip;
 
 // set handleSubmit for the fields listed above for when form is submitted.
 // set axios post with props.toggleFetch

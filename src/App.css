@@ -24,7 +24,7 @@ a {
   justify-content: space-between;
 }
 
-.slip-container {
+.competition-container {
   display: flex;
   background-color: rgba(87, 0, 0, 0.205);
   margin-left: 10vh;
@@ -33,11 +33,11 @@ a {
   margin-bottom: 4vh;
 }
 
-.slip-image {
+.competition-image {
   height: 200px;
 }
 
-.slip-details {
+.competition-details {
   text-align: left;
   padding-left: 4vh;
 }
