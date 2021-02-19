@@ -22,12 +22,13 @@ function NewSlip(props) {
     };
     // console.log(fields)
     await axios.post(baseURL, { fields }, config);
-    // props.setToggleFetch((curr) => !curr);
+    props.setToggleFetch((curr) => !curr);
   };
 
   return (
     <form className="score-slip" onSubmit={handleSubmit}>
       <h1>New Scoring Slip</h1>
+      <h6>Please fill out your score details below!</h6>
       <input
         id="contestant"
         type="text"

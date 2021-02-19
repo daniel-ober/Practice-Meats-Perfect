@@ -7,56 +7,41 @@ import NewSlip from "./components/NewSlip";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Rules from './components/Rules'
-import Event from './components/Event'
-import NewEvent from './components/NewEvent'
+import Slip from './components/Slip'
+// import Event from './components/Event'
+// import NewEvent from './components/NewEvent'
 import "./App.css";
 
 function App() {
-  const [events, setEvents] = useState([]);
+  const [slips, setSlips] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
 
   useEffect(() => {
-    const getEvents = async () => {
+    const getSlips = async () => {
       const resp = await axios.get(baseURL, config);
-      setEvents(resp.data.records);
+      setSlips(resp.data.records);
     };
-    getEvents();
+    getSlips();
   }, [toggleFetch]);
-
-
-  // <div className="App">
-  // <Nav />
-  // <Route exact path="/">
-  //   <div className="slips-container">
-  //     {slips.map((slip) => (
-  //       <Slip slip={slip} key={slip.id} />
-  //     ))}
-  //   </div>
-  // </Route>
-  // <Route path='/rules'>
-  //   <Rules/>
-  // </Route>
-  // <Route path="/new-slip">
-  //   <SlipPost setToggleFetch={setToggleFetch} />
-  // </Route>
 
   return (
     <div className="App">
       <Nav />
       <Route exact path="/">
-        <div className="event-container">
-          {events.map((event) => (
-            <Event event={event} key={event.id} />
+        <div className="slip-container">
+          {slips.map((slip) => (
+            <Slip slip={slip} key={slip.id} />
           ))}
         </div>
       </Route>
-      <Route path='/new-event'>
-        <NewEvent setToggleFetch={setToggleFetch} />
-      </Route>
+      {/* <Route path='/new-event'>
+        <NewEvent 
+        setToggleFetch={setToggleFetch} />
+      </Route> */}
       <Route path="/new-slip">
-        <NewSlip />
+        <NewSlip setToggleFetch={setToggleFetch}/>
       </Route>
-      <Route path='/rules'>
+      <Route path='/judging-rules'>
         <Rules/>
       </Route>
       <Route path="/about">
