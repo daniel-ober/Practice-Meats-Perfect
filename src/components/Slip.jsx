@@ -2,11 +2,11 @@ function Slip(props) {
   const {
     team,
     category,
-    imageURL,
     appearance,
     taste,
     tenderness,
     comments,
+    imageURL,
   } = props.slip.fields;
 
   return (

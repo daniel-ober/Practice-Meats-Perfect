@@ -9,6 +9,7 @@ function NewSlip(props) {
   const [taste, setTaste] = useState("");
   const [tenderness, setTenderness] = useState("");
   const [comments, setComments] = useState("");
+  const [imageURL, setImageURL] = useState("")
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,6 +20,7 @@ function NewSlip(props) {
       taste,
       tenderness,
       comments,
+      imageURL,
     };
     // console.log(fields)
     await axios.post(baseURL, { fields }, config);
@@ -26,7 +28,7 @@ function NewSlip(props) {
   };
 
   return (
-    <form className="score-slip" onSubmit={handleSubmit}>
+    <form className="slip-form" onSubmit={handleSubmit}>
       <h1>New Scoring Slip</h1>
       <h6>Please fill out your score details below!</h6>
       <input
@@ -100,14 +102,14 @@ function NewSlip(props) {
         <option value="1">Tenderness: 1 - Disqualified</option>
       </select>
       <br />
-      {/* <input
+      <input
         id="imageURL"
         type="text"
         value={imageURL}
         placeholder="Image URL"
         onChange={(e) => setImageURL(e.target.value)}
       />
-      <br /> */}
+      <br />
       <input
         id="comments"
         type="text"
