@@ -8,7 +8,7 @@ function Nav() {
       </div>
       <Link to="/">Home</Link>
       <Link to='/rules'>Rules</Link>
-      <Link to="/new">New Scoring Slip</Link>
+      <Link to="/new-slip">New Scoring Slip</Link>
       <Link to="/about">About</Link>
     </nav>
   );

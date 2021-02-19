@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hanuman:wght@700&display=swap");
 
 .App {
-  font-family: 'Hanuman', serif;
+  font-family: "Hanuman", serif;
   font-size: 20px;
   padding-bottom: 15vh;
 }
@@ -9,7 +9,7 @@
 #logo-header {
   height: 100px;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -17,7 +17,7 @@ nav,
 a {
   display: flex;
   flex-direction: row;
-  justify-content:flex-end;
+  justify-content: flex-end;
   text-decoration: none;
   padding-left: 3vh;
   padding-right: 3vh;
@@ -35,8 +35,6 @@ a {
 
 .slip-image {
   height: 200px;
-  padding-top: 3vh;
-  padding-bottom: 5vh;
 }
 
 .slip-details {
@@ -50,9 +48,9 @@ a {
 }
 
 li {
-    font-size: medium;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+  font-size: medium;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 
 h1 {
@@ -60,38 +58,31 @@ h1 {
   justify-content: center;
 }
 
-input {
+.score-slip {
+  display: block;
   display: flex;
   flex-direction: column;
-  text-align: left;
-  width: 36.5vh;
-  padding: 7px;
-  margin: 10px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  width: 60vh;
+  height: 50vh;
 }
 
-select {
+/* select {
   display: flex;
   flex-direction: column;
-  text-align: left;
-  width: 38.5vh;
-  padding: 7px;
-  margin: 10px;
   margin-left: auto;
   margin-right: auto;
-}
+  text-align: left;
+  width: 40vh;
+  padding: 7px;
+  margin: 10px;
+} */
 
-button {
-display: block;
-margin-left: auto;
-margin-right: auto;
-margin-top: 1vh;
-margin-bottom: 1.5vh;
-width: 38.5vh;
-height: 4vh;
-color: white;
-background-color: rgb(29, 9, 215);
+.submit-slip {
+  color: white;
+  background-color: rgb(29, 9, 215);
 }
 
 .about {
@@ -100,13 +91,13 @@ background-color: rgb(29, 9, 215);
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(87, 0, 0);
-    color: white;
-    text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(87, 0, 0);
+  color: white;
+  text-align: center;
 }
 
 .social {
@@ -122,167 +113,34 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size:x-small;
+  font-size: x-small;
 }
 
-@media only screen and (max-width: 812px){
-.App {   
-  background-color: rgba(255, 255, 255, 0.447);
-  position: relative;
-  min-height: 100vh;
-} 
-
-#logo-header {
-  height: 75px;
-  display: flex;
-  flex-direction:row;
-  justify-content: space-around;
-}
-
-nav,
-a {
-  margin: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-decoration: none;
-  font-size: medium;
-}
-
-.slip-container {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(187, 119, 16, 0.132);
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.slip-image {
-  height: 180px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-.slip-details {
-  display:flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-.rules {
-  margin-left: 2%;
-  margin-right: 11%;
-}
-
-ul {
-  font-size: small;
-
-}
-
-li {
-    font-size: small;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-}
-
-h1 {
-  display: flex;
-  justify-content: center;
-}
-
-input {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  width: 30vh;
-  padding: 7px;
-  margin: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-select {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  width: 32.1vh;
-  padding: 7px;
-  margin: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1vh;
-  margin-bottom: 1.5vh;
-  width: 32.1vh;
-  height: 4vh;
-  color: white;
-  background-color: rgb(29, 9, 215);
-}
-
-.about {
-  padding-right: 5vh;
-  padding-left: 5vh;
-  font-size: medium;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: red;
-  color: white;
-  text-align: center;
-}
-
-.social {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 35px;
-  padding-bottom: 0vh;
-}
-
-.daniel-ober {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size:small;
-}
-}
-
-@media only screen and (max-width: 1366px){
-
-  .App {   
-    background-color: rgba(255, 255, 255, 0.447);
+@media only screen and (max-width: 1366px) {
+  .App {
+    background-color: rgba(41, 79, 126, 0.111);
     position: relative;
     min-height: 100vh;
-  } 
-  
+  }
+
   #logo-header {
     height: 80px;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-around;
   }
-  
+
   nav,
   a {
     margin: 4px;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-rows: auto;
     justify-content: center;
     text-decoration: none;
     font-size: large;
+    display: grid;
   }
-  
+
   .slip-container {
     display: flex;
     flex-direction: column;
@@ -290,42 +148,40 @@ button {
     margin-left: 10%;
     margin-right: 10%;
   }
-  
+
   .slip-image {
-    height: 180px;
+    height: 280px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-  
   }
-  
+
   .slip-details {
-    display:flex;
+    display: flex;
     flex-direction: column;
     text-align: left;
   }
-  
+
   .rules {
     margin-left: 2%;
     margin-right: 11%;
   }
-  
+
   ul {
     font-size: small;
-  
   }
-  
+
   li {
-      font-size: small;
-      padding-top: 1vh;
-      padding-bottom: 1vh;
+    font-size: small;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
   }
-  
+
   h1 {
     display: flex;
     justify-content: center;
   }
-  
+
   input {
     display: flex;
     flex-direction: column;
@@ -336,7 +192,7 @@ button {
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   select {
     display: flex;
     flex-direction: column;
@@ -347,7 +203,7 @@ button {
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   button {
     display: block;
     margin-left: auto;
@@ -359,13 +215,13 @@ button {
     color: white;
     background-color: rgb(29, 9, 215);
   }
-  
+
   .about {
     padding-right: 5vh;
     padding-left: 5vh;
     font-size: medium;
   }
-  
+
   .footer {
     position: fixed;
     left: 0;
@@ -375,7 +231,7 @@ button {
     color: white;
     text-align: center;
   }
-  
+
   .social {
     display: flex;
     flex-direction: row;
@@ -383,16 +239,142 @@ button {
     height: 35px;
     padding-bottom: 0vh;
   }
-  
+
   .daniel-ober {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size:small;
+    font-size: small;
   }
-
-
 }
 
+@media only screen and (max-width: 812px) {
+  .App {
+    background-color: rgba(255, 255, 255, 0.447);
+    position: relative;
+    min-height: 100vh;
+  }
 
+  #logo-header {
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
+  nav,
+  a {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    font-size: medium;
+  }
+
+  .slip-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(187, 119, 16, 0.132);
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .slip-image {
+    height: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slip-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .rules {
+    margin-left: 2%;
+    margin-right: 11%;
+  }
+
+  ul {
+    font-size: small;
+  }
+
+  li {
+    font-size: small;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  input {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 30vh;
+    padding: 7px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  select {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 32.1vh;
+    padding: 7px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+    margin-bottom: 1.5vh;
+    width: 32.1vh;
+    height: 4vh;
+    color: white;
+    background-color: rgb(29, 9, 215);
+  }
+
+  .about {
+    padding-right: 5vh;
+    padding-left: 5vh;
+    font-size: medium;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 35px;
+    padding-bottom: 0vh;
+  }
+
+  .daniel-ober {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: small;
+  }
+}

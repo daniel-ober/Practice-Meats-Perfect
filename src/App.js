@@ -3,7 +3,7 @@ import axios from "axios";
 import { Route } from "react-router-dom";
 import { baseURL, config } from "./services";
 import Nav from "./components/Nav";
-import Scoring from "./components/Scoring";
+import SlipPost from "./components/SlipPost";
 import Slip from "./components/Slip";
 import About from "./components/About";
 import Footer from "./components/Footer";
@@ -35,8 +35,8 @@ function App() {
       <Route path='/rules'>
         <Rules/>
       </Route>
-      <Route path="/new">
-        <Scoring setToggleFetch={setToggleFetch} />
+      <Route path="/new-slip">
+        <SlipPost setToggleFetch={setToggleFetch} />
       </Route>
       <Route path="/about">
         <About />

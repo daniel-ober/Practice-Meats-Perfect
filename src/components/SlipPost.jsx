@@ -4,7 +4,7 @@ import { baseURL, config } from "../services";
 // import Scoring from '../components/Scoring'
 // imports will include: baseURL and config from services folder, useState from React, and axios for my post
 
-function Scoring(props) {
+function SlipPost(props) {
   const [team, setTeam] = useState("");
   const [category, setCategory] = useState("");
   const [imageURL, setImageURL] = useState("");
@@ -30,7 +30,7 @@ function Scoring(props) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className='score-slip' onSubmit={handleSubmit}>
       <h1>New Scoring Slip</h1>
       <input
         id="contestant"
@@ -39,17 +39,19 @@ function Scoring(props) {
         placeholder="Team Number"
         onChange={(e) => setTeam(e.target.value)}
       />
+      <br/>
       <select
-          id="category"
-          value={category}
-          onChange={(e) => setCategory(e.target.value)}
-        >
+        id="category"
+        value={category}
+        onChange={(e) => setCategory(e.target.value)}
+      >
         <option value="meat-category">Meat Category</option>
         <option value="Chicken">Chicken</option>
         <option value="Ribs">Ribs</option>
         <option value="Pork">Pork</option>
         <option value="Brisket">Brisket</option>
       </select>
+      <br/>
       <select
         id="appearance"
         value={appearance}
@@ -66,6 +68,7 @@ function Scoring(props) {
         <option value="2">Appearance: 2 - Inedible</option>
         <option value="1">Appearance: 1 - Disqualified</option>
       </select>
+      <br/>
       <select
         id="taste"
         value={taste}
@@ -82,6 +85,7 @@ function Scoring(props) {
         <option value="2">Taste: 2 - Inedible</option>
         <option value="1">Taste: 1 - Disqualified</option>
       </select>
+      <br/>
       <select
         id="tenderness"
         value={tenderness}
@@ -98,6 +102,7 @@ function Scoring(props) {
         <option value="2">Tenderness: 2 - Inedible</option>
         <option value="1">Tenderness: 1 - Disqualified</option>
       </select>
+      <br/>
       <input
         id="imageURL"
         type="text"
@@ -105,19 +110,23 @@ function Scoring(props) {
         placeholder="Image URL"
         onChange={(e) => setImageURL(e.target.value)}
       />
-      <input
+      <br/>
+      <textarea
         id="comments"
         type="text"
         value={comments}
         placeholder="Comments"
         onChange={(e) => setComments(e.target.value)}
       />
-      <button type="submit">Submit</button>
+      <br/>
+      <button className="submit-slip" type="submit">
+        Submit
+      </button>
     </form>
   );
 }
 
-export default Scoring;
+export default SlipPost;
 
 // set handleSubmit for the fields listed above for when form is submitted.
 // set axios post with props.toggleFetch
