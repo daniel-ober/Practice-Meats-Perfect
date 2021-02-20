@@ -32,7 +32,6 @@ function NewSlip(props) {
 
   return (
     <form className="slip-form" onSubmit={handleSubmit}>
-      <h1>New Scoring Slip</h1>
       <h6>Please fill out your score details below!</h6>
       <input
         id="contestant"

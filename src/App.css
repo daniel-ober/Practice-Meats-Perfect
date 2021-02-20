@@ -5,7 +5,7 @@
   background-color: rgba(158, 114, 76, 0.296);
   font-size: 20px;
   padding-bottom: 15vh;
-  padding-top: 12vh;
+  padding-top: 10vh;
 }
 
 
@@ -28,6 +28,11 @@ a {
   /* padding-top: 10vh; */
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.page-header {
+text-align: center;
+font-weight: bolder;
 }
 
 /* .slip-form {

@@ -29,6 +29,7 @@ function App() {
     <div className="App">
       <Nav />
       <Route exact path="/">
+      <h3 className='page-header'>Single Item Ranks</h3>
         <div className="slips-map">
           {slips.map((slip) => (
             <Slip slip={slip} key={slip.id} />
@@ -40,17 +41,18 @@ function App() {
         setToggleFetch={setToggleFetch} />
       </Route> */}
       <Route path="/new-slip">
+      <h3 className='page-header'>New Score Slip</h3>
         <NewSlip setToggleFetch={setToggleFetch}/>
       </Route>
       <Route exact path='/slips/:id'>
         <SlipDetails slips={slips} />
       </Route>
       <Route path='/judging-rules'>
-      <h3>Judging Rules</h3>
+      <h3 className='page-header'>Judging Rules</h3>
         <Rules/>
       </Route>
       <Route path="/about">
-      <h3>About</h3>
+      <h3 className='page-header'>About</h3>
         <About />
       </Route>
       <Footer />
