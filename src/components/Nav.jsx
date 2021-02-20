@@ -1,21 +1,23 @@
 import { Link } from "react-router-dom";
+import './Nav.css'
 
 function Nav() {
   return (
-    <nav>
-      <div>
-        <img
+    <header>
+          <img
           src="https://i.imgur.com/VqPYDtJ.png"
-          id="logo-header"
+          className="logo"
           alt="BBQ wars"
         />
-      </div>
+    <nav>
       <Link to="/">Home</Link>
       {/* <Link to="/new-event">New Event</Link> */}
       <Link to="/new-slip">New Scoring Slip</Link>
+      <Link to='/slips'>Slip Details</Link>
       <Link to="/judging-rules">Judging Rules</Link>
       <Link to="/about">About</Link>
     </nav>
+    </header>
   );
 }
 

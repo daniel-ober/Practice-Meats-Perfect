@@ -129,8 +129,3 @@ function NewSlip(props) {
 }
 
 export default NewSlip;
-
-// set handleSubmit for the fields listed above for when form is submitted.
-// set axios post with props.toggleFetch
-
-// return form with handleSubmit, once submitted. Input values should match field names. Ensure that onChange waits for event.

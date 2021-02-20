@@ -1,5 +1,7 @@
-import React from 'react'
-import './Slip.css'
+import React from "react";
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import "./Slip.css";
 
 function Slip(props) {
   const {
@@ -8,11 +10,11 @@ function Slip(props) {
     appearance,
     taste,
     tenderness,
-    comments,
     imageURL,
   } = props.slip.fields;
 
-  // const toggleButton [toggleFetch, setToggleFetch] = []
+  const [scoreDetails, setScoreDetails] = useState(false)
+  // const expand = () => {()}
 
   return (
     <div className="slip-container">
@@ -23,19 +25,21 @@ function Slip(props) {
           alt={category}
         />
       </div>
-      <div className='slip-content'>
-      <div className='slip-title'>
-        <h2>{team}</h2>
-        <h4>{category}</h4>
-      </div>
-      <div className="slip-details">
-        <h5>Appearance: {appearance}</h5>
-        <h5>Taste: {taste}</h5>
-        <h5>Tenderness: {tenderness}</h5>
-        <h5>Comments: {comments}</h5>
-      </div>
-        <div className='slip-button'>
-          <button>Slip Details</button>
+      <div className="slip-content">
+        <div className="slip-title">
+          <h2>{team}</h2>
+          <h3>{category}</h3>
+        </div>
+        <div className='score-details' value={scoreDetails}>
+          <h5>Appearance: {appearance}</h5>
+          <h5>Taste: {taste}</h5>
+          <h5>Tenderness: {tenderness}</h5>
+        </div>
+        <div className="slip-button">
+          <button onClick={(e) => setScoreDetails(e.target.value)}>Score details</button>
+          <Link to={`/slips/${props.slip.id}`}>
+            <button>Scoring Details</button>
+          </Link>
         </div>
       </div>
     </div>
@@ -44,7 +48,7 @@ function Slip(props) {
 
 export default Slip;
 
-// with kcbs weighting:
+// KCBS official score weighting:
 {
   /* <h5>Appearance: {appearance} ({appearance * 0.014} weighted)</h5>
 <h5>Taste: {taste} ({taste * 0.05743} weighted)</h5>
