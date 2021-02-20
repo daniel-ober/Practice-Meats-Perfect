@@ -1,25 +1,24 @@
+
+
 .slip-container {
   /* width: 50%; */
+  display: flex;
+  flex-direction: row;
   overflow: hidden;
   box-shadow: 0px 0px 20px -3px;
-  transition: 0.3s;
+  transition: 0.2s;
   animation:ease-in;
   background-color: #77040422;
 }
 
-.slip-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.slip-container {
+/* .slip-container {
   display: flex;
   flex-direction: row;
-}
+} */
 
 .slip-container:hover {
   transform: scale(1.02);
-  box-shadow: 0px 20px 100px 20px;
+  box-shadow: 0px 20px 200px 15px;
 }
 
 .slip-image {
@@ -30,7 +29,8 @@
 }
 
 .slip-title {
-  
+  font-style:italic;
+  font-weight: 400px;
 }
 
 .slip-content {
@@ -40,11 +40,6 @@
   justify-content:space-between;
 }
 
-.slip-button {
-  display: flex;
-  justify-content:flex-end;
-}
-
 .slip-button button {
   transition: 0.5s;
   color: rgb(255, 255, 255);
@@ -52,12 +47,13 @@
   background-color: rgb(29, 9, 215)
 }
 
-.slip-button:hover {
+/* .slip-button:hover {
   
-}
+} */
 
 h5 {
-  margin: 3px;
+  padding-bottom: 3%;
+  font-size: 22px;
 }
 
 

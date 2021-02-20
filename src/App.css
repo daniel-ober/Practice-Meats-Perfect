@@ -5,7 +5,7 @@
   background-color: rgba(158, 114, 76, 0.296);
   font-size: 20px;
   padding-bottom: 15vh;
-  padding-top: 10vh;
+  padding-top: 9vh;
 }
 
 
@@ -32,7 +32,8 @@ a {
 
 .page-header {
 text-align: center;
-font-weight: bolder;
+font-size: xx-large;
+padding: 2vh;
 }
 
 /* .slip-form {

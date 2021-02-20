@@ -29,7 +29,7 @@ function App() {
     <div className="App">
       <Nav />
       <Route exact path="/">
-      <h3 className='page-header'>Single Item Ranks</h3>
+      <h3 className='page-header'>Top Menu Picks</h3>
         <div className="slips-map">
           {slips.map((slip) => (
             <Slip slip={slip} key={slip.id} />

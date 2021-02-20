@@ -38,7 +38,7 @@ function Slip(props) {
         <div className="slip-button">
           <button onClick={(e) => setScoreDetails(e.target.value)}>Score details</button>
           <Link to={`/slips/${props.slip.id}`}>
-            <button className='page-header'>Scoring Details</button>
+            <button className='score-details-button'>Scoring Details</button>
           </Link>
         </div>
       </div>
