@@ -6,9 +6,10 @@
   flex-direction: row;
   overflow: hidden;
   box-shadow: 0px 0px 20px -3px;
-  transition: 0.2s;
-  animation:ease-in;
+  transition: 0.4s;
+  /* animation:ease-in; */
   background-color: #77040422;
+  border-radius: 7px;
 }
 
 /* .slip-container {
@@ -17,8 +18,8 @@
 } */
 
 .slip-container:hover {
-  transform: scale(1.02);
-  box-shadow: 0px 20px 200px 15px;
+  transform: scale(1.005);
+  box-shadow: 0px 20px 100px 10px;
 }
 
 .slip-image {
@@ -26,6 +27,12 @@
   overflow: hidden;
   width: 600px;
   height: 400px;
+}
+
+.slip-image:hover {
+  /* transform: scale(1.05);
+  transition: 2.5s; */
+  /* animation:infinite; */
 }
 
 .slip-title {
@@ -40,12 +47,16 @@
   justify-content:space-between;
 }
 
-.slip-button button {
+.slip-buttons button {
   transition: 0.5s;
   color: rgb(255, 255, 255);
   font-size:large;
-  background-color: rgb(29, 9, 215)
+  background-color: rgb(29, 9, 215);
 }
+
+/* .slip-buttons { 
+  justify-content: left;
+} */
 
 /* .slip-button:hover {
   
@@ -56,4 +67,16 @@ h5 {
   font-size: 22px;
 }
 
-
+@media only screen and (max-width: 812px) {
+  .slip-container {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px -3px;
+    transition: 0.4s;
+    /* animation:ease-in; */
+    background-color: #77040422;
+    padding: 0;
+    margin: 0;
+  }
+}

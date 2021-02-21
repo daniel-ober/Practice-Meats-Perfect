@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { baseURL, config } from "../services";
 import { useHistory } from 'react-router-dom';
+import './NewSlip.css'
 
 function NewSlip(props) {
   const [team, setTeam] = useState("");

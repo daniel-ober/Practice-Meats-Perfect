@@ -35,10 +35,12 @@ function Slip(props) {
           <h5>Taste: {taste}</h5>
           <h5>Tenderness: {tenderness}</h5>
         </div>
-        <div className="slip-button">
-          <button onClick={(e) => setScoreDetails(e.target.value)}>Score details</button>
+        <div className="slip-buttons">
+          <Link to={`/new-slip`}>
+            <button className='rate-dish-button'>Rate this dish!</button>
+          </Link>
           <Link to={`/slips/${props.slip.id}`}>
-            <button className='score-details-button'>Scoring Details</button>
+            <button className='scoring-details-button'>Scoring Details</button>
           </Link>
         </div>
       </div>
