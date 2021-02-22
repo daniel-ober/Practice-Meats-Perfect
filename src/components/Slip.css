@@ -19,7 +19,7 @@
   width: 600px;
 }
 
-.slip-title {
+.slip-header {
   font-style:italic;
   font-weight: 400px;
 }
@@ -38,8 +38,6 @@
   width: 20vh;
   background-color: rgb(29, 9, 215);
 }
-
-
 
 @media only screen and (max-width: 1366px) {
 
@@ -62,9 +60,10 @@
   object-fit: cover;
   overflow: hidden;
   width: 100%;
+  height: 400px;
 }
 
-.slip-title {
+.slip-header {
   font-style:italic;
 }
 
@@ -76,21 +75,19 @@
 }
 
 .slip-buttons {
-  padding-left: 10%;
-  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .slip-buttons button {
   transition: 0.5s;
   color: rgb(255, 255, 255);
   font-size:large;
+  width: 25vh;
+  height: 5vh;
   background-color: rgb(29, 9, 215);
-  width: 100%;
-}
-
-h5 {
-  padding-bottom: 3%;
-  font-size: 22px;
 }
 }
 
@@ -117,7 +114,7 @@ h5 {
     width: 100%;
   }
   
-  .slip-title {
+  .slip-header {
     font-style:italic;
   }
   
@@ -129,8 +126,10 @@ h5 {
   }
   
   .slip-buttons {
-    padding-left: 10%;
-    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   .slip-buttons button {
@@ -139,9 +138,16 @@ h5 {
     font-size:large;
     background-color: rgb(29, 9, 215);
   }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .category {
+    font-size: 22px;
+  }
   
   h5 {
-    padding-bottom: 3%;
-    font-size: 22px;
+    font-size: 16px;
   }
   }

@@ -26,14 +26,14 @@ function Slip(props) {
         />
       </div>
       <div className="slip-content">
-        <div className="slip-title">
-          <h2>{team}</h2>
-          <h3>{category}</h3>
+        <div className="slip-header">
+          <h2 className='title'>{team}</h2>
+          <h3 className='category'>{category}</h3>
         </div>
         <div className='score-details' value={scoreDetails}>
-          <h5>Appearance: {appearance}</h5>
-          <h5>Taste: {taste}</h5>
-          <h5>Tenderness: {tenderness}</h5>
+          <h5 className='appearance'>Appearance: {appearance}</h5>
+          <h5 className='taste'>Taste: {taste}</h5>
+          <h5 className='tenderness'>Tenderness: {tenderness}</h5>
         </div>
         <div className="slip-buttons">
         <Link to={`/slips/${props.slip.id}`}>

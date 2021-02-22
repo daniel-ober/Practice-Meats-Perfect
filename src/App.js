@@ -5,7 +5,7 @@ import axios from "axios";
 import Nav from "./components/Nav";
 import Slip from './components/Slip'
 import SlipDetails from './components/SlipDetails'
-import SlipForm from "./components/NewSlip";
+import SlipForm from "./components/SlipForm";
 import Rules from './components/Rules'
 import About from "./components/About";
 import Footer from "./components/Footer";

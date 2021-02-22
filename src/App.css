@@ -2,7 +2,7 @@
 
 .App {
   font-family: "Hanuman", serif;
-  background-color: rgba(255, 255, 255, 0.296);
+  background-color: rgba(201, 178, 178, 0.42);
   font-size: 20px;
   padding-bottom: 15vh;
   padding-top: 10vh;
@@ -51,9 +51,10 @@ button {
   margin-right: 11%;
 }
 
-.about {
+.about-description {
   padding-right: 10vh;
   padding-left: 10vh;
+  font-size: xx-large;
 }
 
 footer {
@@ -104,8 +105,8 @@ footer {
     grid-auto-columns: auto;
     grid-gap: 3rem;
     padding-top: 2vh;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .slip-form {
@@ -148,10 +149,10 @@ footer {
     padding-bottom: 1vh;
   }
 
-  .about {
+  .about-description {
       padding-right: 15vh;
       padding-left: 15vh;
-      font-size: small;
+      font-size: x-large;
    }
 
   .footer {
@@ -243,10 +244,10 @@ footer {
     padding-bottom: 1vh;
   }
 
-  .about {
+  .about-description {
       padding-right: 3vh;
       padding-left: 3vh;
-      font-size:x-small;
+      font-size: large;
    }
 
   .footer {

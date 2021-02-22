@@ -13,7 +13,17 @@ a {
   float: inline-end;
   text-decoration: none;
   padding-right: 2vh;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: x-large;
+}
+
+nav,
+a:hover {
+  display: inline-flex;
+  float: inline-end;
+  text-decoration: none;
+  padding-right: 2vh;
+  color: rgb(252, 229, 95);
   font-size: x-large;
 }
 
@@ -37,16 +47,25 @@ a {
     display: inline-flex;
     float: inline-end;
     text-decoration: none;
-    padding-left: 2vh;
     padding-right: 2vh;
-    color: rgb(0, 0, 0);
-    font-size: large;
+    color: rgb(255, 255, 255);
+    font-size: medium;
   }
 
-.logo {
-  justify-content: center;
-  height: 80px;
-}
+  nav,
+  a:hover {
+    display: inline-flex;
+    float: inline-end;
+    text-decoration: none;
+    padding-right: 2vh;
+    color: rgb(252, 229, 95);
+    font-size: medium;
+  }
+
+  .logo {
+    justify-content: center;
+    height: 80px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -64,14 +83,23 @@ a {
     display: inline-flex;
     float: inline-end;
     text-decoration: none;
-    padding-left: 2vh;
     padding-right: 2vh;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: x-small;
   }
 
-.logo {
-  justify-content: center;
-  height: 40px;
-}
+  nav,
+  a:hover {
+    display: inline-flex;
+    float: inline-end;
+    text-decoration: none;
+    padding-right: 2vh;
+    color: rgb(252, 229, 95);
+    font-size: x-small;
+  }
+
+  .logo {
+    justify-content: center;
+    height: 40px;
+  }
 }
