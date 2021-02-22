@@ -36,11 +36,11 @@ function Slip(props) {
           <h5>Tenderness: {tenderness}</h5>
         </div>
         <div className="slip-buttons">
-          <Link to={`/new-slip`}>
-            <button className='rate-dish-button'>Rate this dish!</button>
-          </Link>
-          <Link to={`/slips/${props.slip.id}`}>
+        <Link to={`/slips/${props.slip.id}`}>
             <button className='scoring-details-button'>Scoring Details</button>
+          </Link>
+          <Link to={`/new-slip`}>
+            <button className='rate-dish-button'>Submit Your Rating!</button>
           </Link>
         </div>
       </div>

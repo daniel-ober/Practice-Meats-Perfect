@@ -2,7 +2,6 @@ import axios from "axios";
 import { useState } from "react";
 import { baseURL, config } from "../services";
 import { useHistory } from 'react-router-dom';
-import './NewSlip.css'
 
 function NewSlip(props) {
   const [team, setTeam] = useState("");
@@ -25,7 +24,6 @@ function NewSlip(props) {
       comments,
       imageURL,
     };
-    // console.log(fields)
     await axios.post(baseURL, { fields }, config);
     props.setToggleFetch((curr) => !curr);
     histroy.push("/")

@@ -11,9 +11,7 @@ function Nav() {
         />
     <nav>
       <Link to="/">Home</Link>
-      {/* <Link to="/new-event">New Event</Link> */}
       <Link to="/new-slip">New Scoring Slip</Link>
-      {/* <Link to='/slips'>Slip Details</Link> */}
       <Link to="/judging-rules">Judging Rules</Link>
       <Link to="/about">About</Link>
     </nav>

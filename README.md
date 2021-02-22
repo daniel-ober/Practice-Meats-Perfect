@@ -3,7 +3,7 @@
 
 ## Project Description
 
-BBQ Wars is an Airtable and React build that gives BBQ enthusiasts the ability to share their food scores/notes via a judging 'slip', similar to ones used in competitive BBQ. From the Home screen, users can view recently judged BBQ or choose to navigate to the "New Slip" form page in the Navigation bar to submit their own scoring slip and image link.
+BBQ Wars is an Airtable and React build that gives BBQ enthusiasts the ability to share their food scores/notes via a judging 'slip', similar to a scoring slip you'd use in competitive BBQ. From the Home screen, users can view recently judged BBQ or choose to navigate to the "New Slip" form page in the Navigation bar to submit their own scoring slip and image link.
 
 
 ## Wireframes
@@ -88,29 +88,30 @@ Example data from Airtable:
 - Setup Airtable database
 - Utilize Airtable database for making successful API calls 
 - Functional button, allowing submission of new judging slips
-- Render Airtable data on page with 6 components (get)
+- Render Airtable data on page with 6 components (get) 
 - Allow users to submit BBQ data via 'New Slip' form (post)
 
 #### PostMVP
 
-- Design Custom Logo
 - Enhanced CSS
+- Design Custom Logo
 - Add a 'Slip Details' button that shows/hides the judge scoring details
 - Add option to sort home by meat category (ie. chicken, ribs, pork, brisket)
-- Add a delete button for users to remove their judging slip
-- Add edit functionality to allow users to edit their judging slip 
+- Add an 'Events' and 'Add Event' page for reastaurants and competetitve BBQ teams to create events (ie. competitive BBQ event, deals/promotions, etc.)
+- Incorporate a weighted rating system by dish and by restaurant/team, allowing users to rate specific dishes
+- Add edit functionality to allow users to edit their judging slip
 
 
 ## Project Schedule
 
-| Day      | Deliverable                                             |    Status   |
-| -------- | ------------------------------------------------------- | ----------- |
+| Day       | Deliverable                                            |    Status   |
+| --------- | ------------------------------------------------------ | ----------- |
 | Feb 12-15 | Prompt / Wireframes / Priority Matrix / Timeframes     | Completed   |
 | Feb 16    | Proposal Approval / Link Airtable API / Pseudocoding   | Completed   |
 | Feb 17    | Setup Services / Setup Components                      | Completed   |
-| Feb 18    | Functionable click model / Media Queries               | Not Started |
-| Feb 19    | Deployed MVP / Testing / De-bugging                    | Not Started |
-| Feb 20-22 | Post MVP                                               | Not Started |
+| Feb 18    | Functionable click model / Media Queries               | Completed   |
+| Feb 19    | Deployed MVP / Testing / De-bugging                    | Completed   |
+| Feb 20-22 | Post MVP                                               | In Progress |
 | Feb 23    | Presentations                                          | Not Started |
 
 
@@ -119,22 +120,19 @@ Example data from Airtable:
 | Component                   | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------------- | :------: | :------------: | :-----------: | :---------: |
 | Setup React App             |     H    |      2hrs      |      1hrs     |     0hrs    |
-| Airtable / Data Setup       |     H    |      2hrs      |      2hrs     |     0hrs    |
+| Airtable / Data Setup       |     H    |      2hrs      |      3hrs     |     0hrs    |
 | Component: Nav              |     H    |      3hrs      |      2hrs     |     0hrs    |
 | Component: Home             |     H    |      3hrs      |      3hrs     |     0hrs    |
 | Component: Form             |     H    |      3hrs      |      5hrs     |     0hrs    |
 | Component: Slips            |     H    |      3hrs      |      5hrs     |     0hrs    |
 | Component: About            |     H    |      1hrs      |      1hrs     |     0hrs    |
 | Component: Footer           |     H    |      1hrs      |      1hrs     |     0hrs    |
-| App.js Routes               |     H    |      3hrs      |      2hrs     |     0hrs    |
-| Render Data                 |     H    |      3hrs      |      2.5hrs   |     0hrs    |
-| Functional Buttons          |     H    |      3hrs      |      2hrs     |     0hrs    |
-| Media Query                 |     H    |      3hrs      |      3hrs     |     0hrs    |
-| CSS Styling: Homepage       |     H    |      3hrs      |      2hrs     |     0hrs    |
-| CSS Styling: New Slip Form  |     H    |      3hrs      |      2hrs     |     0hrs    |
-| CSS Styling: About Page     |     H    |      1hrs      |      0.5hrs   |     0hrs    |
-| CSS Styling: Footer Page    |     H    |      1hrs      |      1hrs     |     0hrs    |
-| Total                       |     H    |      38hrs     |      35hrs    |     0hrs    |
+| App.js Routes               |     H    |      3hrs      |      3hrs     |     0hrs    |
+| Render Data                 |     H    |      3hrs      |      3hrs     |     0hrs    |
+| Functional Buttons          |     H    |      3hrs      |      3hrs     |     0hrs    |
+| Media Query                 |     H    |      3hrs      |      4hrs     |     0hrs    |
+| CSS Styling                 |     H    |      3hrs      |      6hrs     |     0hrs    |
+| Total                       |     H    |      38hrs     |      40hrs    |     0hrs    |
 
 
 ## SWOT Analysis

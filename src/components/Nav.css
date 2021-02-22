@@ -12,20 +12,42 @@ a {
   display: inline-flex;
   float: inline-end;
   text-decoration: none;
-  padding-left: 2vh;
   padding-right: 2vh;
   color: rgb(0, 0, 0);
   font-size: x-large;
 }
 
-
 .logo {
+  align-content: center;
   height: 100px;
 }
 
 
 @media only screen and (max-width: 1366px) {
+  header {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+  }
 
+  nav,
+  a {
+    display: inline-flex;
+    float: inline-end;
+    text-decoration: none;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    color: rgb(0, 0, 0);
+    font-size: large;
+  }
+
+.logo {
+  justify-content: center;
+  height: 80px;
+}
 }
 
 @media only screen and (max-width: 800px) {
@@ -50,6 +72,7 @@ a {
   
   
   .logo {
+    align-content: center;
     height: 75px;
   }
 }
