@@ -9,7 +9,7 @@
 }
 
 .slip-container:hover {
-  transform: scale(1.005);
+  transform: scale(1.01);
   box-shadow: 0px 20px 100px 10px;
 }
 
@@ -17,7 +17,6 @@
   object-fit: cover;
   overflow: hidden;
   width: 600px;
-  height: 400px;
 }
 
 .slip-title {
@@ -26,7 +25,7 @@
 }
 
 .slip-content {
-  margin: 35px;
+  margin: 30px;
   display: flex;
   flex-direction: column;
   justify-content:space-between;
@@ -36,13 +35,10 @@
   transition: 0.5s;
   color: rgb(255, 255, 255);
   font-size:large;
+  width: 20vh;
   background-color: rgb(29, 9, 215);
 }
 
-h5 {
-  padding-bottom: 3%;
-  font-size: 22px;
-}
 
 
 @media only screen and (max-width: 1366px) {
@@ -65,12 +61,11 @@ h5 {
 .slip-image {
   object-fit: cover;
   overflow: hidden;
-  width: 700px;
+  width: 100%;
 }
 
 .slip-title {
   font-style:italic;
-  font-weight: 400px;
 }
 
 .slip-content {
@@ -90,6 +85,7 @@ h5 {
   color: rgb(255, 255, 255);
   font-size:large;
   background-color: rgb(29, 9, 215);
+  width: 100%;
 }
 
 h5 {
@@ -98,8 +94,8 @@ h5 {
 }
 }
 
-
 @media only screen and (max-width: 812px) {
+
   .slip-container {
     display: flex;
     flex-direction: row;
@@ -107,7 +103,45 @@ h5 {
     box-shadow: 0px 0px 20px -3px;
     transition: 0.4s;
     background-color: #77040422;
-    padding: 0;
-    margin: 0;
+    border-radius: 7px;
   }
-}
+  
+  .slip-container:hover {
+    transform: scale(1.005);
+    box-shadow: 0px 20px 100px 10px;
+  }
+  
+  .slip-image {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .slip-title {
+    font-style:italic;
+  }
+  
+  .slip-content {
+    margin: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+  }
+  
+  .slip-buttons {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .slip-buttons button {
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    font-size:large;
+    background-color: rgb(29, 9, 215);
+  }
+  
+  h5 {
+    padding-bottom: 3%;
+    font-size: 22px;
+  }
+  }

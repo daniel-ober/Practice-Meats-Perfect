@@ -2,7 +2,7 @@
 
 .App {
   font-family: "Hanuman", serif;
-  background-color: rgba(158, 114, 76, 0.296);
+  background-color: rgba(255, 255, 255, 0.296);
   font-size: 20px;
   padding-bottom: 15vh;
   padding-top: 10vh;
@@ -10,6 +10,7 @@
 
 .page-header {
   text-align: center;
+  margin-bottom: 1vh;
 }
 
 .slips-map {
@@ -30,80 +31,25 @@
   margin-right: auto;
   text-align: center;
   width: 60vh;
-  height: 50vh;
+  height: 70vh;
 }
 
-
-/* .slip-container { */
-  /* width: 20vw;
-  box-sizing:content-box;
-  border-radius: 50px;
-  background-color: rgb(238, 240, 249);
-  display:grid;
-/* } */
-
-/* .slip-image { */
-  /* height: 400px;
-  display:block;
-  margin-left: auto;
-  margin-right: auto; */
-  /* object-fit: cover; */
-/* } */
-
-/* .slip-details {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-} */
-
-/* .rules {
-  margin-right: 10vh;
-  margin-left: 10vh;
-}
-
-li {
-  font-size: medium;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-}
-
-h1 {
-  display: flex;
-  justify-content: center;
-}
-
-.score-slip {
+button {
   display: block;
-  display: flex;
-  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  width: 60vh;
-  height: 50vh;
-} */
-
-/* select {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-  width: 40vh;
-  padding: 7px;
-  margin: 10px;
-} */
-
-/* .submit-event, */
-/* .submit-slip {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  width: 100%;
+  height: 4vh;
   color: white;
   background-color: rgb(29, 9, 215);
-} */
+}
 
-/* .about {
-  padding-right: 10vh;
-  padding-left: 10vh;
-} */
+.rules {
+  margin-left: 5%;
+  margin-right: 11%;
+}
 
 .about {
   padding-right: 10vh;
@@ -115,7 +61,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgb(87, 0, 0);
+  background-color: rgb(138, 88, 76);
   color: white;
   text-align: center;
   display: flex;
@@ -152,24 +98,6 @@ footer {
     text-align: center;
   }
 
-  /* #logo-header {
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  } */
-
-  /* nav,
-  a {
-    margin: 4px;
-    display: grid;
-    grid-template-rows: auto;
-    justify-content: center;
-    text-decoration: none;
-    font-size: large;
-    display: grid;
-  } */
-
   .slips-map {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
@@ -181,44 +109,32 @@ footer {
   }
 
   .slip-form {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: 60vh;
-    height: 50vh;
+    width: 40vh;
   }
-
-  /* .rules {
-    margin-right: 10vh;
-    margin-left: 10vh;
-  } */
 
   .slip-container {
     display: flex;
     flex-direction: column;
     background-color: rgba(187, 119, 16, 0.132);
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 
-  .slip-image {
-    height: 280px;
+
+  button {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .slip-details {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: 100%;
+    height: 4vh;
+    color: white;
+    background-color: rgb(29, 9, 215);
   }
 
   .rules {
-    margin-left: 2%;
+    margin-left: 5%;
     margin-right: 11%;
   }
 
@@ -232,49 +148,10 @@ footer {
     padding-bottom: 1vh;
   }
 
-  h1 {
-    display: flex;
-    justify-content: center;
-  }
-
-  input {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: 30vh;
-    padding: 7px;
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  select {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: 32.1vh;
-    padding: 7px;
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1vh;
-    margin-bottom: 1.5vh;
-    width: 32.1vh;
-    height: 4vh;
-    color: white;
-    background-color: rgb(29, 9, 215);
-  }
-
   .about {
       padding-right: 15vh;
       padding-left: 15vh;
-      font-size: medium;
+      font-size: small;
    }
 
   .footer {
@@ -282,7 +159,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: rgb(138, 88, 76);
     color: white;
     text-align: center;
   }
@@ -305,39 +182,41 @@ footer {
 
 @media only screen and (max-width: 812px) {
   .App {
-    background-color: rgba(255, 255, 255, 0.447);
-    position: relative;
-    min-height: 100vh;
+    font-family: "Hanuman", serif;
+    background-color: rgba(158, 114, 76, 0.296);
+    font-size: 20px;
+    padding-bottom: 15vh;
+    padding-top: 10vh;
   }
 
-  /* #logo-header {
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  .page-header {
+    text-align: center;
   }
 
-  nav,
-  a {
-    margin: 4px;
+  .slips-map {
     display: grid;
-    grid-template-rows: auto;
-    justify-content: center;
-    text-decoration: none;
-    font-size: large;
-    display: grid;
-  } */
+    grid-template-rows: repeat(4, 1fr);
+    grid-auto-columns: auto;
+    grid-gap: 3rem;
+    padding-top: 2vh;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .slip-form {
+    width: 35vh;
+  }
 
   .slip-container {
     display: flex;
     flex-direction: column;
     background-color: rgba(187, 119, 16, 0.132);
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 0%;
+    margin-right: 0%;
   }
 
   .slip-image {
-    height: 150px;
+    height: 280px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -350,71 +229,32 @@ footer {
   }
 
   .rules {
-    margin-left: 2%;
+    margin-left: 5%;
     margin-right: 11%;
   }
 
   ul {
-    font-size: small;
+    font-size: medium;
   }
 
   li {
-    font-size: small;
+    font-size: medium;
     padding-top: 1vh;
     padding-bottom: 1vh;
   }
 
-  h1 {
-    display: flex;
-    justify-content: center;
-  }
-
-  input {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: 30vh;
-    padding: 7px;
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  select {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: 32.1vh;
-    padding: 7px;
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1vh;
-    margin-bottom: 1.5vh;
-    width: 32.1vh;
-    height: 4vh;
-    color: white;
-    background-color: rgb(29, 9, 215);
-  }
-
   .about {
-    padding-right: 4vh;
-    padding-left: 4vh;
-    font-size: medium;
-  }
+      padding-right: 3vh;
+      padding-left: 3vh;
+      font-size:x-small;
+   }
 
   .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: rgb(138, 88, 76);
     color: white;
     text-align: center;
   }
@@ -434,43 +274,3 @@ footer {
     font-size: small;
   }
 }
-
-
-  /* .event-container {
-    display:inline-table;
-    background-color: rgba(87, 0, 0, 0.205);
-    margin-left: 2vh;
-    margin-right: 2vh;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-  }
-  
-  .event-image {
-    height: 100px;
-  }
-  
-  .event-details {
-    text-align: left;
-
-  } */
-  
-
-
-
-/* 
-  ipad: 
-  .App {
-    font-family: "Hanuman", serif;
-    background-color: rgba(41, 79, 126, 0.111);
-    font-size: 20px;
-    padding-bottom: 15vh;
-  }
-
-
-  .slips-map {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: auto;
-    grid-gap: 5rem;
-  } */
-  

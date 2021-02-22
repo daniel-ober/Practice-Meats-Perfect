@@ -3,14 +3,12 @@ import { useEffect, useState } from "react";
 import { baseURL, config } from "./services";
 import axios from "axios";
 import Nav from "./components/Nav";
-import SlipForm from "./components/SlipForm";
-import About from "./components/About";
-import Footer from "./components/Footer";
-import Rules from './components/Rules'
 import Slip from './components/Slip'
 import SlipDetails from './components/SlipDetails'
-// import Event from './components/Event'
-// import NewEvent from './components/NewEvent'
+import SlipForm from "./components/NewSlip";
+import Rules from './components/Rules'
+import About from "./components/About";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -29,17 +27,13 @@ function App() {
     <div className="App">
       <Nav />
       <Route exact path="/">
-      <h3 className='page-header'>Top Menu Picks</h3>
+      <h3 className='page-header'>Top Rated</h3>
         <div className="slips-map">
           {slips.map((slip) => (
             <Slip slip={slip} key={slip.id} />
           ))}
         </div>
       </Route>
-      {/* <Route path='/new-event'>
-        <NewEvent 
-        setToggleFetch={setToggleFetch} />
-      </Route> */}
       <Route path="/new-slip">
       <h3 className='page-header'>New Score Slip</h3>
         <SlipForm setToggleFetch={setToggleFetch}/>
