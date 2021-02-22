@@ -1,6 +1,7 @@
 function Rules(props) {
   return (
-    <ul className="rules">
+    <div className="rules">
+    <ul>
       <li>
         Blind judging only. Entries will be submitted in a numbered container
         provided by the contest organizer.
@@ -60,6 +61,7 @@ function Rules(props) {
         <li>Tenderness - 1.1428</li>
       </ul>
     </ul>
+    </div>
   );
 }
 

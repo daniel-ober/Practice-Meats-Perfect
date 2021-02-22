@@ -131,9 +131,9 @@ Example data from Airtable:
 | App.js Routes               |     H    |      3hrs      |      3hrs     |     0hrs    |
 | Render Data                 |     H    |      3hrs      |      3hrs     |     0hrs    |
 | Functional Buttons          |     H    |      3hrs      |      3hrs     |     0hrs    |
-| Media Query                 |     H    |      3hrs      |      4hrs     |     0hrs    |
+| Media Query                 |     H    |      3hrs      |      6hrs     |     0hrs    |
 | CSS Styling                 |     H    |      3hrs      |      6hrs     |     0hrs    |
-| Total                       |     H    |      38hrs     |      40hrs    |     0hrs    |
+| Total                       |     H    |      38hrs     |      42hrs    |     0hrs    |
 
 
 ## SWOT Analysis

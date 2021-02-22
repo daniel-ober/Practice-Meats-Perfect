@@ -51,6 +51,17 @@ button {
   margin-right: 11%;
 }
 
+ul {
+  font-size: medium;
+}
+
+li {
+  font-size: medium;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+
 .about-description {
   padding-right: 10vh;
   padding-left: 10vh;
