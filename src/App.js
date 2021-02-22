@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { baseURL, config } from "./services";
 import axios from "axios";
 import Nav from "./components/Nav";
-import NewSlip from "./components/NewSlip";
+import SlipForm from "./components/SlipForm";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Rules from './components/Rules'
@@ -42,7 +42,7 @@ function App() {
       </Route> */}
       <Route path="/new-slip">
       <h3 className='page-header'>New Score Slip</h3>
-        <NewSlip setToggleFetch={setToggleFetch}/>
+        <SlipForm setToggleFetch={setToggleFetch}/>
       </Route>
       <Route exact path='/slips/:id'>
         <SlipDetails slips={slips} />

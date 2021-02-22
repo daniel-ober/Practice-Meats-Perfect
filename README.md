@@ -99,6 +99,7 @@ Example data from Airtable:
 - Add option to sort home by meat category (ie. chicken, ribs, pork, brisket)
 - Add an 'Events' and 'Add Event' page for reastaurants and competetitve BBQ teams to create events (ie. competitive BBQ event, deals/promotions, etc.)
 - Incorporate a weighted rating system by dish and by restaurant/team, allowing users to rate specific dishes
+- Take individual dish scores and incorporate into the SlipDetails component, listing out scores individually.
 - Add edit functionality to allow users to edit their judging slip
 
 
