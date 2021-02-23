@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import "./Slip.css";
 
 function Slip(props) {
@@ -12,10 +12,13 @@ function Slip(props) {
     imageURL,
   } = props.slip.fields;
 
-const weightedAppearance = ((appearance) * (0.015 * 100).toFixed(1))
-const weightedTaste = ((taste) * (0.05 * 100).toFixed(1))
-const weightedTenderness = ((tenderness) * (0.035 * 100).toFixed(1))
-const weightedTotal = ((weightedAppearance + weightedTaste + weightedTenderness) * 0.1).toFixed(1)
+  const weightedAppearance = appearance * (0.015 * 100).toFixed(1);
+  const weightedTaste = taste * (0.05 * 100).toFixed(1);
+  const weightedTenderness = tenderness * (0.035 * 100).toFixed(1);
+  const weightedTotal = (
+    (weightedAppearance + weightedTaste + weightedTenderness) *
+    0.1
+  ).toFixed(1);
 
   return (
     <div className="slip-container">
@@ -28,26 +31,23 @@ const weightedTotal = ((weightedAppearance + weightedTaste + weightedTenderness)
       </div>
       <div className="slip-content">
         <div className="slip-header">
-          <h2 className='title'>{team}</h2>
-          <h3 className='category'>{category}</h3>
+          <h2 className="title">{team}</h2>
+          <h3 className="category">{category}</h3>
         </div>
-        <br/>
-        <div className='weighted-total-container'>
-          <div className='overall'>Overall Rating: {weightedTotal} / 10</div>
+        <div className="weighted-total-container">
+          <div className="overall">Rating: {weightedTotal} / 10</div>
         </div>
-        <br/>
-        <div className='score-details'>
-          <h5 className='appearance'>Appearance: {appearance}</h5>
-          <h5 className='taste'>Taste: {taste}</h5>
-          <h5 className='tenderness'>Tenderness: {tenderness}</h5>
+        <div className="score-details">
+          <h5 className="appearance">Appearance: {appearance}</h5>
+          <h5 className="taste">Taste: {taste}</h5>
+          <h5 className="tenderness">Tenderness: {tenderness}</h5>
         </div>
-        <br/>
         <div className="slip-buttons">
-        <Link to={`/slips/${props.slip.id}`}>
-            <button className='scoring-details-button'>Scoring Details</button>
+          <Link to={`/slips/${props.slip.id}`}>
+            <button className="scoring-details-button">Scoring Details</button>
           </Link>
           <Link to={`/new-slip/${props.slip.id}`}>
-            <button className='rate-dish-button'>Submit Your Rating!</button>
+            <button className="rate-dish-button">Submit Your Rating!</button>
           </Link>
         </div>
       </div>

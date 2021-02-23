@@ -10,7 +10,11 @@ function About() {
         judged BBQ, or click on the 'New Judging Slip' page to submit your own
         scoring slip and image link!
       </h3>
-      <img className='about-image' src='https://i.imgur.com/Mdz6ISj.jpg' alt='bbq-goodness'/>
+      <img
+        className="about-image"
+        src="https://i.imgur.com/Mdz6ISj.jpg"
+        alt="bbq-goodness"
+      />
     </div>
   );
 }

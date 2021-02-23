@@ -30,7 +30,8 @@ function Rules(props) {
           <li>pooled sauce</li>
           <li>
             less than the minimum samples of meat to provide to the judges - any
-            judges who doesn't receive a sample will give a one (1) in ALL criteria.
+            judges who doesn't receive a sample will give a one (1) in ALL
+            criteria.
           </li>
         </ul>
         <li>
@@ -41,7 +42,9 @@ function Rules(props) {
           <li>a. sculptured meat,</li>
           <li>b. foreign object in the container,</li>
           <li>c. incorrect meat,</li>
-          <li>d. a marked turn-in container (if judging a competition event)</li>
+          <li>
+            d. a marked turn-in container (if judging a competition event)
+          </li>
         </ul>
         <li>
           The weighting factors for the BBQ Wars scoring system is as follows:

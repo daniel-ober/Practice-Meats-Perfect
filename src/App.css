@@ -91,7 +91,7 @@ li {
   flex-direction: column;
   margin-left: 10vh;
   margin-right: 10vh;
-  margin-bottom: 2vh;
+  margin-bottom: 0vh;
 }
 
 .scoring-categories {
@@ -229,17 +229,17 @@ footer {
     flex-direction: column;
     margin-left: 10vh;
     margin-right: 10vh;
-    margin-bottom: 2vh;
+    margin-bottom: 9vh;
   }
-  
+
   .scoring-categories {
     font-weight: bolder;
   }
-  
+
   .creation-date {
     font-size: small;
   }
-  
+
   .details-back-button {
     font-size: large;
     width: 20vh;
@@ -354,7 +354,11 @@ footer {
     margin-right: 5vh;
     margin-bottom: 2vh;
   }
-  
+
+  .overall {
+    font-size: 23px;
+  }
+
   .scoring-categories {
     font-weight: bolder;
   }
@@ -362,13 +366,13 @@ footer {
   .score-breakdown-header {
     text-align: left;
     padding-top: 4vh;
-    font-size: 31px;
+    font-size: 20px;
   }
-  
+
   .creation-date {
     font-size: small;
   }
-  
+
   .details-back-button {
     justify-content: left;
     font-size: large;
@@ -385,7 +389,7 @@ footer {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
   }
 
   .social {

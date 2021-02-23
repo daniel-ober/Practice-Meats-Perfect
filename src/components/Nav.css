@@ -9,8 +9,8 @@ header {
 
 nav,
 a {
-  display: inline-flex;
-  float: inline-end;
+  display: block;
+  position: relative;
   text-decoration: none;
   padding-right: 2vh;
   color: rgb(255, 255, 255);

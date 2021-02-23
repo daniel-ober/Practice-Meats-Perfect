@@ -3,10 +3,10 @@ import { useEffect, useState } from "react";
 import { baseURL, config } from "./services";
 import axios from "axios";
 import Nav from "./components/Nav";
-import Slip from './components/Slip'
-import SlipDetails from './components/SlipDetails'
+import Slip from "./components/Slip";
+import SlipDetails from "./components/SlipDetails";
 import SlipForm from "./components/SlipForm";
-import Rules from './components/Rules'
+import Rules from "./components/Rules";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -27,7 +27,7 @@ function App() {
     <div className="App">
       <Nav />
       <Route exact path="/">
-      <h3 className='page-header'>Top Rated</h3>
+        <h3 className="page-header">Top Rated</h3>
         <div className="slips-map">
           {slips.map((slip) => (
             <Slip slip={slip} key={slip.id} />
@@ -35,18 +35,18 @@ function App() {
         </div>
       </Route>
       <Route path="/new-slip">
-      <h3 className='page-header'>New Score Slip</h3>
-        <SlipForm setToggleFetch={setToggleFetch}/>
+        <h3 className="page-header">New Score Slip</h3>
+        <SlipForm setToggleFetch={setToggleFetch} />
       </Route>
-      <Route exact path='/slips/:id'>
+      <Route exact path="/slips/:id">
         <SlipDetails slips={slips} />
       </Route>
-      <Route path='/judging-rules'>
-      <h3 className='page-header'>Judging Rules</h3>
-        <Rules/>
+      <Route path="/judging-rules">
+        <h3 className="page-header">Judging Rules</h3>
+        <Rules />
       </Route>
       <Route path="/about">
-      <h3 className='page-header'>About</h3>
+        <h3 className="page-header">About</h3>
         <About />
       </Route>
       <Footer />

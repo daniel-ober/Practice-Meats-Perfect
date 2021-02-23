@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { baseURL, config } from "../services";
-import { useHistory } from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 
 function NewSlip(props) {
   const [team, setTeam] = useState("");
@@ -10,7 +10,7 @@ function NewSlip(props) {
   const [taste, setTaste] = useState("");
   const [tenderness, setTenderness] = useState("");
   const [comments, setComments] = useState("");
-  const [imageURL, setImageURL] = useState("")
+  const [imageURL, setImageURL] = useState("");
   const histroy = useHistory();
 
   const handleSubmit = async (e) => {
@@ -26,7 +26,7 @@ function NewSlip(props) {
     };
     await axios.post(baseURL, { fields }, config);
     props.setToggleFetch((curr) => !curr);
-    histroy.push("/")
+    histroy.push("/");
   };
 
   return (
@@ -47,7 +47,9 @@ function NewSlip(props) {
         onChange={(e) => setCategory(e.target.value)}
         required
       >
-        <option value="" disabled selected>Meat Category</option>
+        <option value="" disabled selected>
+          Meat Category
+        </option>
         <option value="Chicken">Chicken</option>
         <option value="Ribs">Ribs</option>
         <option value="Pork">Pork</option>
@@ -60,7 +62,9 @@ function NewSlip(props) {
         onChange={(e) => setAppearance(e.target.value)}
         required
       >
-        <option value="" disabled selected>Appearance (Select Score)</option>
+        <option value="" disabled selected>
+          Appearance (Select Score)
+        </option>
         <option value="9">Appearance: 9 - Excellent</option>
         <option value="8">Appearance: 8 - Very Good</option>
         <option value="7">Appearance: 7 - Above Average</option>
@@ -78,7 +82,9 @@ function NewSlip(props) {
         onChange={(e) => setTaste(e.target.value)}
         required
       >
-        <option value="" disabled selected>Taste (Select Score)</option>
+        <option value="" disabled selected>
+          Taste (Select Score)
+        </option>
         <option value="9">Taste: 9 - Excellent</option>
         <option value="8">Taste: 8 - Very Good</option>
         <option value="7">Taste: 7 - Above Average</option>
@@ -96,7 +102,9 @@ function NewSlip(props) {
         onChange={(e) => setTenderness(e.target.value)}
         required
       >
-        <option value="" disabled selected>Tenderness (Select Score)</option>
+        <option value="" disabled selected>
+          Tenderness (Select Score)
+        </option>
         <option value="9">Tenderness: 9 - Excellent</option>
         <option value="8">Tenderness: 8 - Very Good</option>
         <option value="7">Tenderness: 7 - Above Average</option>
