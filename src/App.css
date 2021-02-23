@@ -51,6 +51,16 @@ button {
   margin-right: 11%;
 }
 
+.rules-reference-link {
+  color:darkcyan;
+  text-decoration: none;
+}
+
+.rules-reference-link:hover {
+  color:indigo;
+  text-decoration: none;
+}
+
 ul {
   font-size: medium;
 }
@@ -72,6 +82,7 @@ li {
   flex-direction: column;
   margin-left: 10vh;
   margin-right: 10vh;
+  margin-bottom: 2vh;
 }
 
 .details-back-button {
@@ -159,6 +170,16 @@ footer {
   .rules {
     margin-left: 5%;
     margin-right: 11%;
+  }
+
+  .rules-reference-link {
+    color:darkcyan;
+    text-decoration: none;
+  }
+  
+  .rules-reference-link:hover {
+    color:indigo;
+    text-decoration: none;
   }
 
   ul {
@@ -254,6 +275,16 @@ footer {
   .rules {
     margin-left: 5%;
     margin-right: 11%;
+  }
+
+  .rules-reference-link {
+    color:darkcyan;
+    text-decoration: none;
+  }
+  
+  .rules-reference-link:hover {
+    color:indigo;
+    text-decoration: none;
   }
 
   ul {

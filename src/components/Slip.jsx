@@ -1,4 +1,3 @@
-import { render } from "@testing-library/react";
 import React from "react";
 import { Link } from 'react-router-dom'
 import "./Slip.css";
@@ -32,8 +31,8 @@ const weightedTotal = ((weightedAppearance + weightedTaste + weightedTenderness)
           <h2 className='title'>{team}</h2>
           <h3 className='category'>{category}</h3>
         </div>
-        <div className='weighted-total'>
-          <h3>Overall Rating: {weightedTotal}</h3>
+        <div className='weighted-total-container'>
+          <div className='overall'>Overall Rating: {weightedTotal} / 10</div>
         </div>
         <div className='score-details'>
           <h5 className='appearance'>Appearance: {appearance}</h5>
@@ -44,7 +43,7 @@ const weightedTotal = ((weightedAppearance + weightedTaste + weightedTenderness)
         <Link to={`/slips/${props.slip.id}`}>
             <button className='scoring-details-button'>Scoring Details</button>
           </Link>
-          <Link to={`/new-slip`}>
+          <Link to={`/new-slip/${props.slip.id}`}>
             <button className='rate-dish-button'>Submit Your Rating!</button>
           </Link>
         </div>
@@ -54,8 +53,3 @@ const weightedTotal = ((weightedAppearance + weightedTaste + weightedTenderness)
 }
 
 export default Slip;
-
-// KCBS official score weighting:
-// <h5>Appearance: {appearance} ({appearance * 0.014} weighted)</h5>
-// <h5>Taste: {taste} ({taste * 0.05743} weighted)</h5>
-// <h5>Tenderness: {tenderness} ({tenderness * 0.02857} weighted)</h5>

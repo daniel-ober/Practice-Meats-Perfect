@@ -38,14 +38,16 @@ function NewSlip(props) {
         value={team}
         placeholder="Restaurant/Team Name"
         onChange={(e) => setTeam(e.target.value)}
+        required
       />
       <br />
       <select
         id="category"
         value={category}
         onChange={(e) => setCategory(e.target.value)}
+        required
       >
-        <option value="meat-category">Meat Category</option>
+        <option value="" disabled selected>Meat Category</option>
         <option value="Chicken">Chicken</option>
         <option value="Ribs">Ribs</option>
         <option value="Pork">Pork</option>
@@ -56,8 +58,9 @@ function NewSlip(props) {
         id="appearance"
         value={appearance}
         onChange={(e) => setAppearance(e.target.value)}
+        required
       >
-        <option>Appearance (Select Score)</option>
+        <option value="" disabled selected>Appearance (Select Score)</option>
         <option value="9">Appearance: 9 - Excellent</option>
         <option value="8">Appearance: 8 - Very Good</option>
         <option value="7">Appearance: 7 - Above Average</option>
@@ -73,8 +76,9 @@ function NewSlip(props) {
         id="taste"
         value={taste}
         onChange={(e) => setTaste(e.target.value)}
+        required
       >
-        <option>Taste (Select Score)</option>
+        <option value="" disabled selected>Taste (Select Score)</option>
         <option value="9">Taste: 9 - Excellent</option>
         <option value="8">Taste: 8 - Very Good</option>
         <option value="7">Taste: 7 - Above Average</option>
@@ -90,8 +94,9 @@ function NewSlip(props) {
         id="tenderness"
         value={tenderness}
         onChange={(e) => setTenderness(e.target.value)}
+        required
       >
-        <option>Tenderness (Select Score)</option>
+        <option value="" disabled selected>Tenderness (Select Score)</option>
         <option value="9">Tenderness: 9 - Excellent</option>
         <option value="8">Tenderness: 8 - Very Good</option>
         <option value="7">Tenderness: 7 - Above Average</option>
@@ -107,7 +112,7 @@ function NewSlip(props) {
         id="imageURL"
         type="text"
         value={imageURL}
-        placeholder="Image URL"
+        placeholder="Image URL (optional)"
         onChange={(e) => setImageURL(e.target.value)}
       />
       <br />
@@ -115,7 +120,7 @@ function NewSlip(props) {
         id="comments"
         type="text"
         value={comments}
-        placeholder="Comments"
+        placeholder="Comments (recommended)"
         onChange={(e) => setComments(e.target.value)}
       />
       <br />

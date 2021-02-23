@@ -31,12 +31,28 @@ const weightedTotal = ((weightedAppearance + weightedTaste + weightedTenderness)
 
     return (
         <div className='unique-score-detail'>
-          <h2>Overall: {weightedTotal} / 10</h2>
-          <h5>Appearance (BBQ Wars uses a weight score of 15% for Appearance)<h4>{appearance} ({weightedAppearance}% of weighted total)</h4></h5>
-          <h5>Taste (BBQ Wars uses a weight score of 50% for Taste)<h4>{taste} ({weightedTaste}% of weighted total)</h4></h5>
-          <h5>Tenderness (BBQ Wars uses a weight score of 35% for Tenderness)<h4>{tenderness} ({weightedTenderness}% of weighted total)</h4></h5>
+          <h2>Score Breakdown</h2>
+          <h3>{weightedTotal} / 10</h3>
+          <br/>
+          <h4>Appearance</h4>
+          <h5>Slip Score: {appearance}</h5>
+          <h5>BBQ Wars Weighting: 15%</h5>
+          <h5>Adjusted Weighted Score: {weightedAppearance}</h5>
+          <br/>
+          <br/>
+          <h4>Taste</h4>
+          <h5>Slip Score: {taste}</h5>
+          <h5>BBQ Wars Weighting: 50%</h5>
+          <h5>Adjusted Weighted Score: {weightedTaste}</h5>
+          <br/>
+          <h4>Tenderness</h4>
+          <h5>Slip Score: {tenderness}</h5>
+          <h5>BBQ Wars Weighting: 35%</h5>
+          <h5>Adjusted Weighted Score: {weightedTenderness}</h5>
+          <br/>
           <h5>Comments: <h4>{comments}</h4></h5>
-          <h5>Slip Audit Creation Date: {created}</h5>
+          <br/>
+          <h6>Slip Creation Date: {created}</h6>
           <button className='details-back-button' onClick={() => history.goBack()}>Back</button>
         </div>
     )
