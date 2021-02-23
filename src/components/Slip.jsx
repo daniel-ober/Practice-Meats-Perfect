@@ -1,5 +1,5 @@
+import { render } from "@testing-library/react";
 import React from "react";
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import "./Slip.css";
 
@@ -13,8 +13,10 @@ function Slip(props) {
     imageURL,
   } = props.slip.fields;
 
-  const [scoreDetails, setScoreDetails] = useState(false)
-  // const expand = () => {()}
+const weightedAppearance = ((appearance) * (0.015 * 100).toFixed(1))
+const weightedTaste = ((taste) * (0.05 * 100).toFixed(1))
+const weightedTenderness = ((tenderness) * (0.035 * 100).toFixed(1))
+const weightedTotal = ((weightedAppearance + weightedTaste + weightedTenderness) * 0.1).toFixed(1)
 
   return (
     <div className="slip-container">
@@ -30,7 +32,10 @@ function Slip(props) {
           <h2 className='title'>{team}</h2>
           <h3 className='category'>{category}</h3>
         </div>
-        <div className='score-details' value={scoreDetails}>
+        <div className='weighted-total'>
+          <h3>Overall Rating: {weightedTotal}</h3>
+        </div>
+        <div className='score-details'>
           <h5 className='appearance'>Appearance: {appearance}</h5>
           <h5 className='taste'>Taste: {taste}</h5>
           <h5 className='tenderness'>Tenderness: {tenderness}</h5>
@@ -51,8 +56,6 @@ function Slip(props) {
 export default Slip;
 
 // KCBS official score weighting:
-{
-  /* <h5>Appearance: {appearance} ({appearance * 0.014} weighted)</h5>
-<h5>Taste: {taste} ({taste * 0.05743} weighted)</h5>
-<h5>Tenderness: {tenderness} ({tenderness * 0.02857} weighted)</h5> */
-}
+// <h5>Appearance: {appearance} ({appearance * 0.014} weighted)</h5>
+// <h5>Taste: {taste} ({taste * 0.05743} weighted)</h5>
+// <h5>Tenderness: {tenderness} ({tenderness * 0.02857} weighted)</h5>

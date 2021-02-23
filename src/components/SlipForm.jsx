@@ -36,7 +36,7 @@ function NewSlip(props) {
         id="contestant"
         type="text"
         value={team}
-        placeholder="Team Number"
+        placeholder="Restaurant/Team Name"
         onChange={(e) => setTeam(e.target.value)}
       />
       <br />
