@@ -12,7 +12,7 @@ function About() {
       </h3>
       <img
         className="about-image"
-        src="https://i.imgur.com/Mdz6ISj.jpg"
+        src="https://i.imgur.com/6PjQCGt.jpg"
         alt="bbq-goodness"
       />
     </div>

@@ -65,6 +65,7 @@ function NewSlip(props) {
         <option value="" disabled selected>
           Appearance (Select Score)
         </option>
+        <option value="10">Appearance: 10 - Best I've Ever Had</option>
         <option value="9">Appearance: 9 - Excellent</option>
         <option value="8">Appearance: 8 - Very Good</option>
         <option value="7">Appearance: 7 - Above Average</option>
@@ -85,6 +86,7 @@ function NewSlip(props) {
         <option value="" disabled selected>
           Taste (Select Score)
         </option>
+        <option value="10">Taste: 10 - Best I've Ever Had</option>
         <option value="9">Taste: 9 - Excellent</option>
         <option value="8">Taste: 8 - Very Good</option>
         <option value="7">Taste: 7 - Above Average</option>
@@ -105,6 +107,7 @@ function NewSlip(props) {
         <option value="" disabled selected>
           Tenderness (Select Score)
         </option>
+        <option value="10">Tenderness: 10 - Best I've Ever Had</option>
         <option value="9">Tenderness: 9 - Excellent</option>
         <option value="8">Tenderness: 8 - Very Good</option>
         <option value="7">Tenderness: 7 - Above Average</option>

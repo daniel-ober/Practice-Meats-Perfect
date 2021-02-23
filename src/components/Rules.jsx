@@ -1,4 +1,4 @@
-function Rules(props) {
+function Rules() {
   return (
     <div className="rules">
       <ul>
@@ -16,8 +16,8 @@ function Rules(props) {
           tenderness, before moving on to the a new judging slip.
         </li>
         <li>
-          The scoring system is from 9 to 2, all whole numbers between two and
-          nine may be used to score an entry. 9 excellent, 8 very good, 7 above
+          The scoring system is from 10 to 2, all whole numbers between two and
+          nine may be used to score an entry. 10 best you've had, 9 excellent, 8 very good, 7 above
           average, 6 average, 5 below average, 4 poor, 3 bad, and 2 inedible.
         </li>
         <li>A score of one (1) is a penalty or disqualification.</li>
