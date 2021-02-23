@@ -31,14 +31,17 @@ const weightedTotal = ((weightedAppearance + weightedTaste + weightedTenderness)
           <h2 className='title'>{team}</h2>
           <h3 className='category'>{category}</h3>
         </div>
+        <br/>
         <div className='weighted-total-container'>
           <div className='overall'>Overall Rating: {weightedTotal} / 10</div>
         </div>
+        <br/>
         <div className='score-details'>
           <h5 className='appearance'>Appearance: {appearance}</h5>
           <h5 className='taste'>Taste: {taste}</h5>
           <h5 className='tenderness'>Tenderness: {tenderness}</h5>
         </div>
+        <br/>
         <div className="slip-buttons">
         <Link to={`/slips/${props.slip.id}`}>
             <button className='scoring-details-button'>Scoring Details</button>

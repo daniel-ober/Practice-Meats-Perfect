@@ -49,7 +49,7 @@ a:hover {
     text-decoration: none;
     padding-right: 2vh;
     color: rgb(255, 255, 255);
-    font-size: medium;
+    font-size: x-large;
   }
 
   nav,
@@ -59,7 +59,7 @@ a:hover {
     text-decoration: none;
     padding-right: 2vh;
     color: rgb(252, 229, 95);
-    font-size: medium;
+    font-size: x-large;
   }
 
   .logo {
@@ -72,6 +72,9 @@ a:hover {
   header {
     background-color: rgb(138, 88, 76);
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     left: 0;
     top: 0;
     width: 100%;
@@ -80,26 +83,31 @@ a:hover {
 
   nav,
   a {
-    display: inline-flex;
-    float: inline-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     text-decoration: none;
-    padding-right: 2vh;
+    padding-right: 1.5vh;
+    padding-left: 1.5px;
+    padding-bottom: 5px;
     color: rgb(255, 255, 255);
-    font-size: x-small;
+    font-size: 12px;
   }
 
   nav,
   a:hover {
-    display: inline-flex;
-    float: inline-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     text-decoration: none;
-    padding-right: 2vh;
+    padding-right: 1.5vh;
+    padding-left: 1.5px;
     color: rgb(252, 229, 95);
-    font-size: x-small;
+    font-size: 12px;
   }
 
   .logo {
-    justify-content: center;
-    height: 40px;
+    width: 100%;
+    height: 60px;
   }
 }

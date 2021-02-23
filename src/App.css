@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Hanuman:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Rubik&display=swap");
 
 .App {
-  font-family: "Hanuman", serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Rubik", sans-serif;
   background-color: rgba(201, 178, 178, 0.42);
   font-size: 20px;
   padding-bottom: 15vh;
@@ -51,30 +52,38 @@ button {
   margin-right: 11%;
 }
 
-.rules-reference-link {
-  color:darkcyan;
-  text-decoration: none;
-}
-
-.rules-reference-link:hover {
-  color:indigo;
-  text-decoration: none;
-}
-
 ul {
-  font-size: medium;
+  font-size: large;
 }
 
 li {
-  font-size: medium;
+  font-size: large;
   padding-top: 1vh;
   padding-bottom: 1vh;
 }
 
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .about-description {
-  padding-right: 20vh;
-  padding-left: 20vh;
-  font-size: x-large;
+  word-spacing: 7px;
+  line-height: 3vh;
+  padding-top: 7vh;
+  padding-right: 5vh;
+  padding-left: 5vh;
+  padding-bottom: 50vh;
+  font-size: 23px;
+  text-align: center;
+}
+
+.about-image {
+  height: 36vh;
+  padding-top: 4vh;
+  padding-right: 5vh;
+  justify-content: center;
 }
 
 .unique-score-detail {
@@ -85,9 +94,19 @@ li {
   margin-bottom: 2vh;
 }
 
+.scoring-categories {
+  font-weight: bolder;
+}
+
+.creation-date {
+  font-size: small;
+}
+
 .details-back-button {
-  font-size:large;
+  font-size: large;
+  justify-content: left;
   width: 20vh;
+  height: 7vh;
 }
 
 footer {
@@ -121,8 +140,6 @@ footer {
 
 @media only screen and (max-width: 1366px) {
   .App {
-    font-family: "Hanuman", serif;
-    background-color: rgba(158, 114, 76, 0.296);
     font-size: 20px;
     padding-bottom: 15vh;
     padding-top: 10vh;
@@ -154,7 +171,6 @@ footer {
     margin-right: 15%;
   }
 
-
   button {
     display: block;
     margin-left: auto;
@@ -172,31 +188,63 @@ footer {
     margin-right: 11%;
   }
 
-  .rules-reference-link {
-    color:darkcyan;
-    text-decoration: none;
-  }
-  
-  .rules-reference-link:hover {
-    color:indigo;
-    text-decoration: none;
-  }
-
   ul {
-    font-size: medium;
+    font-size: x-large;
   }
 
   li {
-    font-size: medium;
+    font-size: x-large;
     padding-top: 1vh;
     padding-bottom: 1vh;
   }
 
+  .about-container {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .about-description {
-      padding-right: 15vh;
-      padding-left: 15vh;
-      font-size: x-large;
-   }
+    word-spacing: 7px;
+    line-height: 3vh;
+    padding-top: 2vh;
+    padding-right: 5vh;
+    padding-left: 5vh;
+    padding-bottom: 5vh;
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .about-image {
+    height: 10%;
+    padding-top: 1vh;
+    padding-right: 5vh;
+    justify-content: center;
+  }
+
+  .unique-score-detail {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-bottom: 2vh;
+  }
+  
+  .scoring-categories {
+    font-weight: bolder;
+  }
+  
+  .creation-date {
+    font-size: small;
+  }
+  
+  .details-back-button {
+    font-size: large;
+    width: 20vh;
+    height: 7vh;
+  }
 
   .footer {
     position: fixed;
@@ -226,8 +274,6 @@ footer {
 
 @media only screen and (max-width: 812px) {
   .App {
-    font-family: "Hanuman", serif;
-    background-color: rgba(158, 114, 76, 0.296);
     font-size: 20px;
     padding-bottom: 15vh;
     padding-top: 10vh;
@@ -235,6 +281,8 @@ footer {
 
   .page-header {
     text-align: center;
+    padding-top: 4vh;
+    font-size: 31px;
   }
 
   .slips-map {
@@ -273,35 +321,60 @@ footer {
   }
 
   .rules {
-    margin-left: 5%;
-    margin-right: 11%;
-  }
-
-  .rules-reference-link {
-    color:darkcyan;
-    text-decoration: none;
-  }
-  
-  .rules-reference-link:hover {
-    color:indigo;
-    text-decoration: none;
+    margin-left: 4%;
+    margin-right: 10%;
   }
 
   ul {
-    font-size: medium;
+    font-size: large;
   }
 
   li {
-    font-size: medium;
+    font-size: large;
     padding-top: 1vh;
     padding-bottom: 1vh;
   }
 
   .about-description {
-      padding-right: 3vh;
-      padding-left: 3vh;
-      font-size: large;
-   }
+    padding-right: 0vh;
+    padding-left: 0vh;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .about-image {
+    width: 43vh;
+    justify-content: center;
+  }
+
+  .unique-score-detail {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    margin-bottom: 2vh;
+  }
+  
+  .scoring-categories {
+    font-weight: bolder;
+  }
+
+  .score-breakdown-header {
+    text-align: left;
+    padding-top: 4vh;
+    font-size: 31px;
+  }
+  
+  .creation-date {
+    font-size: small;
+  }
+  
+  .details-back-button {
+    justify-content: left;
+    font-size: large;
+    width: 20vh;
+    height: 7vh;
+  }
 
   .footer {
     position: fixed;
@@ -310,21 +383,15 @@ footer {
     width: 100%;
     background-color: rgb(138, 88, 76);
     color: white;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
   }
 
   .social {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     height: 35px;
-    padding-bottom: 0vh;
-  }
-
-  .daniel-ober {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: small;
+    padding-left: 3vh;
   }
 }

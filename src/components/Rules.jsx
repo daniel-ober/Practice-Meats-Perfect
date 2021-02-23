@@ -1,14 +1,9 @@
-import { Link } from "react-router-dom";
-
 function Rules(props) {
   return (
     <div className="rules">
       <ul>
         <li>
-          Each food item should be scored through a{" "}
-          <Link to="/new-slip" className="rules-reference-link" target="_blank">
-            BBQ Wars scoring slip.
-          </Link>
+          Each food item should be scored through a new BBQ Wars scoring slip.
         </li>
         <li>
           As a judge, you will first score your sample for appearance of the
