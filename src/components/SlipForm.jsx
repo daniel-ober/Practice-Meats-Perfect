@@ -36,7 +36,7 @@ function NewSlip(props) {
         id="contestant"
         type="text"
         value={team}
-        placeholder="Restaurant/Team Name"
+        placeholder="Restaurant Name"
         onChange={(e) => setTeam(e.target.value)}
         required
       />
@@ -48,12 +48,11 @@ function NewSlip(props) {
         required
       >
         <option value="" disabled selected>
-          Meat Category
+          Heat Level
         </option>
-        <option value="Chicken">Chicken</option>
-        <option value="Ribs">Ribs</option>
-        <option value="Pork">Pork</option>
-        <option value="Brisket">Brisket</option>
+        <option value="Mild">Mild</option>
+        <option value="Medium">Medium</option>
+        <option value="Hot">Hot</option>
       </select>
       <br />
       <select
