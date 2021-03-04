@@ -11,13 +11,15 @@
 
 .home-logo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+  height: 25%;
 }
 
 .page-header {
   text-align: center;
   margin-bottom: 1vh;
+  padding-top: 10vh;
 }
 
 .slips-map {

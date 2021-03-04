@@ -27,7 +27,9 @@ function App() {
   return (
     <div className="App">
       <Nav />
+      <Route path='/home'>
       <Home />
+      </Route>
       <Route exact path="/">
         <h3 className="page-header">Top Rated</h3>
         <div className="slips-map">

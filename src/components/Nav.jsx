@@ -7,7 +7,7 @@ function Nav() {
       <Link to='/home'>
       <img
         src="https://i.imgur.com/l20aUwL.png"
-        className="logo"
+        className="nav-logo"
         alt="Hot Chicken Heroes"
       />
       </Link>

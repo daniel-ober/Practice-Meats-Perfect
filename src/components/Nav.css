@@ -1,16 +1,17 @@
 header {
   background-color: rgb(138, 88, 76);
   position: fixed;
+  display: flex;
   left: 0;
   top: 0;
   width: 100%;
   z-index: 500;
 }
 
-nav,
+nav, 
 a {
   display: inline-flex;
-  float: inline-end;
+  justify-items: center;
   text-decoration: none;
   padding-right: 2vh;
   color: rgb(255, 255, 255);
@@ -20,18 +21,16 @@ a {
 nav,
 a:hover {
   display: inline-flex;
-  float: inline-end;
   text-decoration: none;
-  padding-right: 2vh;
   color: rgb(252, 229, 95);
   font-size: x-large;
 }
 
-.logo {
-  align-content: center;
+.nav-logo {
+  align-content: left;
   padding-left: 5vh;
   padding-right: 20vh;
-  height: 100px;
+  height: 120px;
 }
 
 @media only screen and (max-width: 1366px) {
@@ -64,8 +63,8 @@ a:hover {
     font-size: x-large;
   }
 
-.logo {
-  align-content: center;
+.nav-logo {
+  align-content: left;
   padding-left: 2vh;
   padding-right: 2vh;
 }
@@ -108,7 +107,8 @@ a:hover {
     font-size: 12px;
   }
 
-  .logo {
+  .nav-logo {
+    align-content: left;
     height: 15%;
     width: 15%;
     padding-left: 1vh;
