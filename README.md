@@ -1,5 +1,7 @@
 # Nashville's Hot Chicken Heroes
 
+https://hotchickenheroes.netlify.app/
+
 
 ## Project Description
 
@@ -113,7 +115,7 @@ Example data from Airtable:
 | Feb 18    | Functionable click model / Media Queries               | Completed   |
 | Feb 19    | Deployed MVP / Testing / De-bugging                    | Completed   |
 | Feb 20-22 | Post MVP                                               | In Progress |
-| Feb 23    | Presentations                                          | Not Started |
+| Feb 23    | Presentations                                          | Completed   |
 
 
 ## Timeframes
