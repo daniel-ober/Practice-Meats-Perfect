@@ -5,7 +5,7 @@ function Nav() {
   return (
     <header>
       <img
-        src="https://i.imgur.com/dxmPwVW.png"
+        src="https://i.imgur.com/HFBmUJh.png"
         className="logo"
         alt="BBQ wars"
       />

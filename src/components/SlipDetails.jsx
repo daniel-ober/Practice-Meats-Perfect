@@ -45,17 +45,17 @@ function SlipDetails(props) {
       <h2>{weightedTotal} / 10</h2>
       <h4 className="scoring-categories">Appearance</h4>
       <h5>Slip Score: {appearance}</h5>
-      <h5>HotChickenHelper Weighting: 15%</h5>
+      <h5>Hot Chicken Heroes Weighting: 15%</h5>
       <h5>Adjusted Weighted Score: {weightedAppearance}</h5>
       <br />
       <h4 className="scoring-categories">Taste</h4>
       <h5>Slip Score: {taste}</h5>
-      <h5>HotChickenHelper Weighting: 50%</h5>
+      <h5>Hot Chicken Heroes Weighting: 50%</h5>
       <h5>Adjusted Weighted Score: {weightedTaste}</h5>
       <br />
       <h4 className="scoring-categories">Tenderness</h4>
       <h5>Slip Score: {tenderness}</h5>
-      <h5>HotChickenHelper Weighting: 35%</h5>
+      <h5>Hot Chicken Heroes Weighting: 35%</h5>
       <h5>Adjusted Weighted Score: {weightedTenderness}</h5>
       <br />
       <h4>

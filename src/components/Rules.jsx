@@ -3,7 +3,7 @@ function Rules() {
     <div className="rules">
       <ul>
         <li>
-          Each food item should be scored through a new Hot Chicken Helper scoring slip.
+          Each food item should be scored through a new Hot Chicken Heroes scoring slip.
         </li>
         <li>
           As a judge, you will first score your sample for appearance of the
@@ -47,7 +47,7 @@ function Rules() {
           </li>
         </ul>
         <li>
-          The weighting factors for the Hot Chicken Helper scoring system is as follows:
+          The weighting factors for the Hot Chicken Heroes scoring system is as follows:
         </li>
         <ul>
           <li>Appearance - 15%</li>

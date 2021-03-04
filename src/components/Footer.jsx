@@ -10,7 +10,7 @@ function Footer() {
           />
         </a>
         <a
-          href="https://www.linkedin.com/in/daniel-ober-4a19a291/"
+          href="https://www.linkedin.com/in/daniel-ober"
           target="_blank"
         >
           <img
