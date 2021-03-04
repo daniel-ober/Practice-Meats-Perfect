@@ -9,6 +9,7 @@ import SlipForm from "./components/SlipForm";
 import Rules from "./components/Rules";
 import About from "./components/About";
 import Footer from "./components/Footer";
+import Home from './components/Home'
 import "./App.css";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
+      <Home />
       <Route exact path="/">
         <h3 className="page-header">Top Rated</h3>
         <div className="slips-map">

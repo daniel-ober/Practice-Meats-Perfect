@@ -4,11 +4,13 @@ import "./Nav.css";
 function Nav() {
   return (
     <header>
+      <Link to='/home'>
       <img
-        src="https://i.imgur.com/HFBmUJh.png"
+        src="https://i.imgur.com/l20aUwL.png"
         className="logo"
         alt="BBQ wars"
       />
+      </Link>
       <nav>
         <Link to="/">Top Rated</Link>
         <Link to="/new-slip">New Scoring Slip</Link>

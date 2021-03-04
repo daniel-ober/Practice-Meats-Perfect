@@ -9,6 +9,12 @@
   padding-top: 10vh;
 }
 
+.home-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .page-header {
   text-align: center;
   margin-bottom: 1vh;
