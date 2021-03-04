@@ -8,7 +8,7 @@ function Nav() {
       <img
         src="https://i.imgur.com/l20aUwL.png"
         className="logo"
-        alt="BBQ wars"
+        alt="Hot Chicken Heroes"
       />
       </Link>
       <nav>
